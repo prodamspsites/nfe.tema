@@ -22,7 +22,7 @@
 
 
 body{
-	font:13px "Fira Sans", Arial, Verdana !important;
+	font-family:"Fira Sans", Arial, Verdana !important;
 	margin: 0;
 	padding:0;
 }
@@ -49,7 +49,7 @@ header{
 .acessibilidade span{
 	float:left;
 	font-family: Arial;
-	font-size: 0.8em;
+	font-size: 0.7em;
 	margin:12px 0 0 0;
 } 
 .acessibilidade ul{
@@ -149,6 +149,7 @@ header{
 	color:#002e55;
 	text-decoration: none;
 	font-weight: 500;
+	font-size: 0.85em;
 }
 #portal-header .btnReclamacoes{
 	float: right;
@@ -157,7 +158,7 @@ header{
 	margin: 0 0 8px 0;
 	color: #fff;
 	text-decoration: none;
-	font-size: 0.9em;
+	font-size: 0.75em;
 	-webkit-border-radius: 2px;
 	-moz-border-radius: 2px;
 	border-radius: 2px;	
@@ -235,7 +236,7 @@ nav.menu{
 	float:left;
 	width: 315px;
 	color: #555555;
-	font-size: 1em;
+	font-size: 0.9em;
 	margin: 0 0 0 70px;
 	padding: 28px 0 30px 0;
 }
@@ -251,6 +252,7 @@ nav.menu{
 	width: 80%;
 	color:#999999;
 	margin:20px 0 0 0;
+	font-size: 0.8em;
 }
 #footer .footerBottom p.copyright a{
 	text-decoration: underline;
@@ -262,7 +264,7 @@ nav.menu{
 }
 #footer .footerBottom .divProdam p{
 	color:#999999;
-	font-size: 0.8em;
+	font-size: 0.7em;
 	margin: 15px 0 0 0;
 	float: left;
 }

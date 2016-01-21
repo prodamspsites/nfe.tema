@@ -10,7 +10,7 @@
 
         <!--<replace css:theme="#portal-header" css:content="#portal-top" />-->
         <replace css:theme="#footer" css:content="#footer" />
-        <replace css:theme-children="#portal-header .logo" css:content="#portal-logo" />
+        <replace css:theme="#logo" css:content="#logo" />
         <replace css:theme="#content" css:content="#content" />
         <copy css:content="#portal-searchbox" css:theme=".divBusca" />
         <replace css:content="#portal-column-content" css:theme="#portal-column-content" />
