@@ -4,7 +4,7 @@
  *
  * @Autores
  *
- * - Danilo Sartorelli Barbato
+ * - Victor Brosso Alvares
  * - Moisés de Aguiar Júnior
  * - Wellington Braga
  *
@@ -19,6 +19,260 @@
  * Validador de CSS do W3C.
  * http://jigsaw.w3.org/css-validator/
  */
+
+
+body{
+	font:13px "Fira Sans", Arial, Verdana !important;
+	margin: 0;
+	padding:0;
+}
+.wrap{
+	margin:0 auto;
+	width:1100px;
+}
+header{
+	background:#eeeeee;
+	float:left;
+	width:100%;
+	margin:0;
+}
+#main{
+	float:left;
+	clear: both;
+}
+.acessibilidade{
+	width:220px;
+	float:right;
+	height:40px;
+	background: #fff;
+}
+.acessibilidade span{
+	float:left;
+	font-family: Arial;
+	font-size: 0.8em;
+	margin:12px 0 0 0;
+} 
+.acessibilidade ul{
+	float:right;
+	margin:5px 0 0 0;
+	padding: 0;
+}
+.acessibilidade ul li{
+	list-style: none;
+	float: left;
+	width:20px;
+	height:20px;
+	margin: 3px 5px 0 5px;
+	text-align: center;
+}
+.acessibilidade ul li a{
+	float: left;
+	width:20px;
+	height:20px;
+	color: #000;
+	text-decoration: none;
+	font-family:Arial;
+	font-weight: bold;
+	font-size:1.2em;
+}
+.acessibilidade ul li a.icoDiminuir{
+	font-size:0.9em;
+	margin:3px 0 0 0;
+}
+.acessibilidade ul li a.icoContraste{
+	background:url(../img/icoContraste.png) no-repeat 0 1px;
+}
+#portal-header .logo #portal-logo{
+	background:url(../img/logoNfe.png) no-repeat;
+	float:left;
+	width:99px;
+	height:102px;
+	margin:25px 0 0 0;
+}
+#portal-header .logo #portal-logo img, .searchSection{
+	display:none;
+}
+
+#portal-header .divBusca{
+	float:right;
+	margin: 40px 200px 0 0;
+}
+#portal-header .logoFinancas{
+	background:url(../img/logoFinancas.png) no-repeat;
+	float:right;
+	width:163px;
+	height:59px;
+	float: right;
+	margin:30px 0 0 0;
+}
+#portal-header .divSection{
+	clear:both;
+	float: right;
+	width: 700px;
+}
+#portal-header ul.globalnav{
+	float: right;
+	margin: 8px 0 0 0;
+	width: 399px;
+}
+#portal-header ul.globalnav li.active{
+	list-style: none;
+	-webkit-border-top-left-radius: 5px;
+	-webkit-border-top-right-radius: 5px;
+	-moz-border-radius-topleft: 5px;
+	-moz-border-radius-topright: 5px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	background: #fcc833;
+	color: #002e55;
+	display: inline;
+	padding: 15px 25px 10px 25px;
+	text-align: center;
+	margin: 0 4px 0 0;
+}
+#portal-header ul.globalnav li{
+	background: #ff921b;
+	list-style: none;
+	-webkit-border-top-left-radius: 5px;
+	-webkit-border-top-right-radius: 5px;
+	-moz-border-radius-topleft: 5px;
+	-moz-border-radius-topright: 5px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	color: #002e55;
+	display: inline;
+	padding: 15px 25px 10px 25px;
+	text-align: center;
+	margin: 0 4px 0 0;	
+}
+#portal-header ul.globalnav li a{
+	color:#002e55;
+	text-decoration: none;
+	font-weight: 500;
+}
+#portal-header .btnReclamacoes{
+	float: right;
+	background:url(../img/icoReclamacoes.png) no-repeat #345877 8px 5px;
+	padding:5px 10px 5px 30px;
+	margin: 0 0 8px 0;
+	color: #fff;
+	text-decoration: none;
+	font-size: 0.9em;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;	
+}
+
+#portal-searchbox .hiddenStructure{
+	display:none;
+}
+#portal-searchbox .searchField{
+	-webkit-border-top-left-radius: 8px;
+	-webkit-border-bottom-left-radius: 8px;
+	-moz-border-radius-topleft: 8px;
+	-moz-border-radius-bottomleft: 8px;
+	border-top-left-radius: 8px;
+	border-bottom-left-radius: 8px;
+	width: 265px;
+	height: 32px;
+	border:none;
+	color:#545454;
+	padding:0px 0 0 12px;
+	margin: 0;
+}
+#portal-searchbox .searchButton{
+	-webkit-border-top-right-radius: 8px;
+	-webkit-border-bottom-right-radius: 8px;
+	-moz-border-radius-topright: 8px;
+	-moz-border-radius-bottomright: 8px;
+	border-top-right-radius: 8px;
+	border-bottom-right-radius: 8px;
+	background: #345877;
+	color: #fff;
+	text-align: center;
+	border:none;
+	height: 32px;
+	width: 75px;
+	cursor: pointer;
+}
+nav.menu{
+	float:left;
+	width: 100%;
+	min-height: 40px;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#fcc833+0,efb501+100 */
+	background: #fcc833; /* Old browsers */
+	background: -moz-linear-gradient(top,  #fcc833 0%, #efb501 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  #fcc833 0%,#efb501 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  #fcc833 0%,#efb501 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcc833', endColorstr='#efb501',GradientType=0 ); /* IE6-9 */
+}
+.informativosHome{
+	width: 100%;
+	float: left;
+	background: #f3e0e0;
+	min-height: 57px;
+}
+.informativosHome .titImportante{
+	color: #b53b3b;
+	float: left;
+	text-align: center;
+	padding: 20px 55px 0 0;
+}
+#footer{
+	float:left;
+	clear: both;
+	width: 100%;
+	background: #dfdfdf;
+}
+#footer .logoFooter a{
+	background:url(../img/logoFooter.png) no-repeat;
+	float: left;
+	width: 149px;
+	height: 59px;
+	margin: 28px 0 0 0;
+}
+#footer .textoFooter{
+	float:left;
+	width: 315px;
+	color: #555555;
+	font-size: 1em;
+	margin: 0 0 0 70px;
+	padding: 28px 0 30px 0;
+}
+#footer .footerBottom{
+	float:left;
+	clear: both;
+	width: 100%;
+	background: #d0cfcf;
+	height: 54px;
+}
+#footer .footerBottom p.copyright{
+	float: left;
+	width: 80%;
+	color:#999999;
+	margin:20px 0 0 0;
+}
+#footer .footerBottom p.copyright a{
+	text-decoration: underline;
+	color: #999;
+}
+#footer .footerBottom .divProdam{
+	float: right;
+	width: 210px;
+}
+#footer .footerBottom .divProdam p{
+	color:#999999;
+	font-size: 0.8em;
+	margin: 15px 0 0 0;
+	float: left;
+}
+#footer .footerBottom .divProdam .logoProdam a{
+	background:url(../img/logoProdam.png) no-repeat;
+	width: 95px;
+	height: 33px;
+	margin: 12px 0 0 10px;
+	float: left;
+}
 
 
 
