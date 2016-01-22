@@ -11,12 +11,12 @@
         <!--<replace css:theme="#portal-header" css:content="#portal-top" />-->
         <replace css:theme="#footer" css:content="#footer" />
         <replace css:theme="#logo" css:content="#logo" />
-        <replace css:theme="#content" css:content="#content" />
         <copy css:content="#portal-searchbox" css:theme=".divBusca" />
-        <replace css:content="#portal-column-content" css:theme="#portal-column-content" />
+        <!--<replace css:content="#portal-column-content" css:theme="#portal-column-content" />
         <replace css:content="#portal-column-one" css:theme="#portal-column-one" />
         <replace css:content="#portal-column-two" css:theme="#portal-column-two" />
         <after css:theme-children="html head" css:content-children="html head" />
+        <replace css:theme="#content" css:content="#content" />-->
 
     </rules>
 
