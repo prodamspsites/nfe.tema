@@ -12,6 +12,9 @@
         <replace css:theme="#footer" css:content="#footer" />
         <replace css:theme="#logo" css:content="#logo" />
         <copy css:content="#portal-searchbox" css:theme=".divBusca" />
+        <replace css:theme=".logoFinancas" css:content=".logoFinancas" />
+        <replace css:theme-children=".divReclamacao" css:content-children="#button-reclamacoes" />
+
         <!--<replace css:content="#portal-column-content" css:theme="#portal-column-content" />
         <replace css:content="#portal-column-one" css:theme="#portal-column-one" />
         <replace css:content="#portal-column-two" css:theme="#portal-column-two" />

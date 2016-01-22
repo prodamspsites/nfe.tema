@@ -32,19 +32,27 @@
         <div class="logoFinancas"></div>
         <div class="divBusca"></div>
         <div class="divSection">
-          <a href="#" title="RECLAMAÇÕES SOBRE NOTAS FISCAIS" class="btnReclamacoes">RECLAMAÇÕES SOBRE NOTAS FISCAIS</a>
-          <ul class="globalnav">
-            <li class="active"><a href="#">CIDADÃO</a></li>
-            <li><a href="#">EMPRESAS</a></li>
-          </ul>
+          <div class="divReclamacao"></div>
+          <div class="divMenu">
+            <ul class="globalnav">
+              <li class="active"><a href="#">CIDADÃO</a></li>
+              <li><a href="#">EMPRESAS</a></li>
+            </ul>
+          </div>
         </div>
+
       </div>
     </header>
     <!-- Fim do cabeçalho -->
 
     <!--Menu-->
     <nav class="menu">
-      <div class="wrap"></div>
+      <div class="wrap">
+        <ul>
+          <li><a href="#" title="Como participar">Como participar</a></li>
+          <li class="submenu"><a href="#" title="Como utilizar créditos">Como utilizar créditos</a></li>
+        </ul>
+      </div>
     </nav>
     <!--Fim Menu-->
 
@@ -66,26 +74,26 @@
               </div>
             </div>
             <!-- Conteudo -->
-            <div id="portal-column-content" class="cell width-1:2 position-1:4">
+            <div id="content">
               <div id="main-content" class="">
-                <div id="content">
+                <div id="portal-column-content" class="cell width-1:2 position-1:4">
                   <!--SLIDER HOME-->
                   <div class="divSlider">
                     <ul class="bxslider">
                       <li>
-                        <img src="img/slider01.jpg" />
+                        <img src="img/slider01.jpg" class="imgSliderHome" />
                         <h1><a href="">Ganhadores do 16 sorteio da Nota Fiscal Paulistana recebem prêmio da Prefeitura de São Paulo</a></h1>
                         <p>Além dos principais prêmios de R$ 50 mil, R$ 20 mil e R$ 10 mil, foram distribuídos também 50 prêmios no valor de R$ 1 mil, 500 de R$ 100, 5 mil de R$ 20 e 132 mil de R$ 10.</p>
                         <a href="#" title="cotinuar lendo" class="btnContinuar">continuar lendo</a>
                       </li>
                       <li>
-                        <img src="img/slider02.jpg" />
+                        <img src="img/slider02.jpg" class="imgSliderHome"  />
                         <h1><a href="">Ganhadores do 16 sorteio da Nota Fiscal Paulistana recebem prêmio da Prefeitura de São Paulo</a></h1>
                         <p>Além dos principais prêmios de R$ 50 mil, R$ 20 mil e R$ 10 mil, foram distribuídos também 50 prêmios no valor de R$ 1 mil, 500 de R$ 100, 5 mil de R$ 20 e 132 mil de R$ 10.</p>
                         <a href="#" title="cotinuar lendo" class="btnContinuar">continuar lendo</a>
                       </li>
                       <li>
-                        <img src="img/slider03.jpg" />
+                        <img src="img/slider03.jpg" class="imgSliderHome"  />
                         <h1><a href="">Ganhadores do 16 sorteio da Nota Fiscal Paulistana recebem prêmio da Prefeitura de São Paulo</a></h1>
                         <p>Além dos principais prêmios de R$ 50 mil, R$ 20 mil e R$ 10 mil, foram distribuídos também 50 prêmios no valor de R$ 1 mil, 500 de R$ 100, 5 mil de R$ 20 e 132 mil de R$ 10.</p>
                         <a href="#" title="cotinuar lendo" class="btnContinuar">continuar lendo</a>
@@ -121,6 +129,40 @@ Para se cadastrar <a href="" title="clique aqui">clique aqui</a></p>
                       </li>
                     </ul>
                   </div>
+
+                  <div class="divDestaquesHome">
+                    <ul class="destaquesHome">
+                        <li>
+                          <h2>Como participar</h2>
+                          <img src="img/icoDestaques.png" height="107" width="108" title="Como participar" />
+                          <div class="txtDestaque">
+                            <p>Para participar do Programa peça sempre a Nota Fiscal Paulistana quando utilizar qualquer serviço na Cidade de São Paulo.</p>
+                          </div>
+                        </li>
+                    </ul>
+                  </div>
+
+
+                  <div class="divNoticiasHome">
+                    <h2>Últimas notícias</h2>
+                    <ul class="destaquesHome">
+                        <li>
+                          <span class="data">25/12/2015 ás 12:35</span>
+                          <h3>Ganhadores do 16º sorteio da Nota Fiscal Paulistana recebem prêmio da Prefeitura de São Paulo</h3>
+                          <p>Além dos principais prêmios de R$ 50 mil, R$ 20 mil e R$ 10 mil, foram distribuídos também 50 prêmios no valor de R$ 1 mil, 500 de R$ 100, 5 mil de R$ 20 e 132 mil de R$ 10.</p>
+                          <a href="#" title="Continuar lendo" class="btnContinuarLendo">Continuar lendo</a>
+                        </li>
+                        <li>
+                          <span class="data">25/12/2015 ás 12:35</span>
+                          <h3>O que é Nota Fiscal Paulistana?</h3>
+                          <p>Além dos principais prêmios de R$ 50 mil, R$ 20 mil e R$ 10 mil, foram distribuídos também 50 prêmios no valor de R$ 1 mil, 500 de R$ 100, 5 mil de R$ 20 e 132 mil de R$ 10.</p>
+                          <a href="#" title="Continuar lendo" class="btnContinuarLendo">Continuar lendo</a>
+                        </li>
+                    </ul>
+                  </div>
+
+                  <a href="#" title="Acessar veersão simplificada" class="btnVersaoSimp">Acessar veersão simplificada</a>
+
                 </div>
               </div>
             </div>
@@ -129,10 +171,29 @@ Para se cadastrar <a href="" title="clique aqui">clique aqui</a></p>
               <!--<div class="managePortletsLink">
                 <a title="Exibir a tela de gerenciamento dos portlets" href="/@@manage-portlets">Gerenciar portlets</a>
               </div>-->
-              <div class="divSideBar">
+              <div class="divSideBarAcesso">
                 <h2>Acesso ao sistema</h2>
+                <form>
+                  <fieldset>
+                    <legend>Formulário de acesso ao sistema</legend>
+                    <input type="text" />
+                    <input type="text" />
+                    <input type="buttom" />
+                    <ul class="esqueciSenha">
+                      <li><a href="#" title="Esqueci a senha">Esqueci a senha</a></li>
+                      <li>|</li>
+                      <li><a href="#" title="Nâo sou cadastrado">Nâo sou cadastrado</a></li>
+                    </ul>
+                    <a href="#" title="Acesso com certificado digital" class="btnAcessoCertificado">Acesso com certificado digital</a>
+                  </fieldset>
+                </form>
               </div>
-              <div class="divSideBar">
+              <div class="divSideBarAcessoBottom">
+                <p>Instale o aplicativo no seu smartphone</p>
+                <a href="#" title="Baixar na Play Store" class="btnPlay">Baixar na <strong>Play Store</strong></a>
+                <a href="#" title="Baixar na App Store" class="btnApp">Baixar na <strong>App Store</strong></a>
+              </div>
+              <div class="divSideBarPlacar">
                 <h2>Placar</h2>
               </div>
             </div>
