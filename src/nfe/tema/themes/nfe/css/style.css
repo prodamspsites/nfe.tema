@@ -690,6 +690,23 @@ nav.menu ul li:last-child a{
 }
 
 
+/*ESTILO PLACAR
+*/
+body {padding: 0; margin: 0;}
+.flip-counter{width: 225px; margin: 5px 0 8px;height: 28px; display: block;}
+.flip-counter ul.cd{float:left;list-style-type:none;margin:0;padding:0}
+.flip-counter li{background:url(../js/flipcounter/digit_prodam_mini.png) 0 0 no-repeat;}
+.flip-counter li.t{background-position:0 0;width:17px;height:14px}
+.flip-counter li.b{background-position:0 0;width:17px;height:19px}
+.flip-counter li.s{background-position:-17px -329px;width:4px;height:31px}
+.flip-counter li.p{background-position:-21px -329px;width:5px;height:31px}
+#banner_placar span{
+  font-family: "Bitter";
+  color: #525252;
+  font-size: 0.8em;
+}
+
+
 /**
  * BxSlider v4.1.2 - Fully loaded, responsive content slider
 /** RESET AND LAYOUT
@@ -703,8 +720,10 @@ nav.menu ul li:last-child a{
 }
 
 .bx-wrapper img {
-  max-width: 100%;
+  /*max-width: 100%;*/
   display: block;
+  float: left;
+  width: 100%
 }
 
 /** THEME
@@ -927,6 +946,10 @@ nav.menu ul li:last-child a{
 .divSlider .bx-wrapper .bx-pager{
   position: relative;
   bottom: 0;
+}
+.divSlider2{
+  float: left;
+  width: 95%;
 }
 .divSlider2 .bx-wrapper .imgSlider2{
   -webkit-border-top-left-radius: 12px;
