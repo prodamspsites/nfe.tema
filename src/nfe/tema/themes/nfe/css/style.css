@@ -351,6 +351,78 @@ nav.menu ul li:last-child a{
 .divNoticiasHome .destaquesHome span.data{
   color:#525252;
   font-size: 0.8em;
+  float: left;
+  width: 100%;
+  margin: 10px 0 0 0;
+}
+.divNoticiasHome{
+  float:left;
+}
+.divNoticiasHome .destaquesHome{
+  float:left;
+  margin: 0;
+  padding:0;
+}
+.divNoticiasHome .destaquesHome li{
+  border:1px solid #eee;
+  -webkit-border-top-right-radius: 12px;
+  -webkit-border-bottom-right-radius: 12px;
+  -moz-border-radius-topright: 12px;
+  -moz-border-radius-bottomright: 12px;
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+  list-style: none;
+  width: 333px;
+  float:left;
+  margin: 15px 25px 0 0;
+  padding: 5px 5px 5px 10px;
+}
+.divNoticiasHome .destaquesHome li h3{
+  color:#002e55;
+  font-weight: 500;
+  float: left;
+  width: 100%;
+  margin: 10px 0 0 0;  
+}
+.divNoticiasHome .destaquesHome li .btnContinuarLendo{
+  -webkit-border-bottom-right-radius: 12px;
+  -moz-border-radius-bottomright: 12px;
+  border-bottom-right-radius: 12px;
+  background: #eee;
+  color:#002e55;
+  text-decoration: none;
+  float: right;
+  padding: 8px 30px 8px 30px;
+  font-size: 0.8em;
+  margin: 0 -5px -5px 0;
+  position: relative;
+}
+.divNoticiasHome .destaquesHome li .btnContinuarLendo:before{
+    content: "";
+    position: absolute;
+    right: 100%;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-top: 4px solid transparent;
+    border-right: 8px solid #eee;
+    border-bottom: 0px solid transparent;
+}
+.divNoticiasHome .destaquesHome li p{
+  font-size: 0.8em;
+  color: #525252;
+}
+.btnVersaoSimp{
+  float:left;
+  width: 98%;
+  padding:8px 0 8px 0;
+  font-weight: 500;
+  font-size: 0.9em;
+  text-align: center;
+  color:#002e55;
+  background: #eee;
+  text-decoration: none;
+  margin: 15px 0 15px 0;
 }
 .bxslider li{
   width: 100%;
@@ -791,17 +863,24 @@ nav.menu ul li:last-child a{
    ========================================================================== */
 
 /* Custom, iPhone Retina */
-@media only screen and (min-width : 320px) {
-
+@media only screen and (max-width : 320px) {
+  .wrap{
+    width:320px;
+  }
 }
 
 /* Extra Small Devices, Phones */
-@media only screen and (min-width : 480px) {
-
+@media only screen and (max-width : 480px) {
+  .wrap{
+      width:480px;
+    }
 }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
+  .wrap{
+    width:768px;
+  }
   .acessoMobile{
     display:block;
     clear: both;
@@ -811,10 +890,13 @@ nav.menu ul li:last-child a{
 }
 
 /* Medium Devices, Desktops */
-@media only screen and (min-width : 992px) {
+@media only screen and (max-width : 992px) {
+  .wrap{
+    width:992px;
+  }
 }
 
 /* Large Devices, Wide Screens */
-@media only screen and (min-width : 1200px) {
-
+@media only screen and (max-width : 1200px) {
+  
 }
