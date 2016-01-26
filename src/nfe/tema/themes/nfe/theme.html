@@ -36,8 +36,8 @@
           <div class="divReclamacao"></div>
           <div class="divMenu">
             <ul class="globalnav">
-              <li class="active"><a href="#">CIDADÃO</a></li>
-              <li><a href="#">EMPRESAS</a></li>
+              <li class="cidadao"><a href="#">CIDADÃO</a></li>
+              <li class="empresas"><a href="#">EMPRESAS</a></li>
             </ul>
           </div>
         </div>
@@ -47,7 +47,7 @@
     <!-- Fim do cabeçalho -->
 
     <!--Menu-->
-    <nav class="menu">
+    <nav class="menu cidadao">
       <div class="wrap">
         <ul>
           <li><a href="#" title="Como participar">Como participar</a></li>
@@ -195,12 +195,12 @@
               </div>-->
               <div class="divSideBarAcesso">
                 <h2>Acesso ao sistema</h2>
-                <form>
+                <form class="acessoSistema">
                   <fieldset>
                     <legend>Formulário de acesso ao sistema</legend>
-                    <input type="text" />
-                    <input type="text" />
-                    <input type="buttom" />
+                    <input type="text" class="inputAcesso" placeholder="CPF ou CNPJ" />
+                    <input type="password" class="inputAcesso" placeholder="Senha" />
+                    <input type="submit" value="Entrar" class="btnEntrar" />
                     <ul class="esqueciSenha">
                       <li><a href="#" title="Esqueci a senha">Esqueci a senha</a></li>
                       <li>|</li>
@@ -212,8 +212,8 @@
               </div>
               <div class="divSideBarAcessoBottom">
                 <p>Instale o aplicativo no seu smartphone</p>
-                <a href="#" title="Baixar na Play Store" class="btnPlay">Baixar na <strong>Play Store</strong></a>
-                <a href="#" title="Baixar na App Store" class="btnApp">Baixar na <strong>App Store</strong></a>
+                <a href="#" title="Baixar na Play Store" class="btnPlay"><span>Baixar na <strong>Play Store</strong></span></a>
+                <a href="#" title="Baixar na App Store" class="btnApp"><span>Baixar na <strong>App Store</strong></span></a>
               </div>
               <div class="divSideBarPlacar">
                 <h2>Placar</h2>
