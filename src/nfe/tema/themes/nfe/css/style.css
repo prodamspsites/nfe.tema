@@ -431,7 +431,7 @@ nav.menu ul li:last-child a{
   background: #eeeeee;
   float: left;
   clear: both;
-  margin: 20px 0 0 0;
+  margin: 20px 0 20px 0;
   padding: 22px 0 0 32px;
   width: calc(100% - 32px);
 }
@@ -1030,24 +1030,19 @@ body {padding: 0; margin: 0;}
    Adaptações responsivas
    ========================================================================== */
 
-/* Custom, iPhone Retina */
-@media only screen and (max-width : 320px) {
-  .wrap{
-    width:320px;
-  }
-}
-
-/* Extra Small Devices, Phones */
-@media only screen and (max-width : 480px) {
-  .wrap{
-      width:480px;
-    }
-}
-
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
-  .wrap{
-    width:768px;
+  #portal-column-content{
+    width: 100%;
+  }
+  #portal-column-two{
+  width: calc(100% - 32px);
+  }
+  .bxslider li .contSliderHome{
+    clear: both;
+  }
+  .placarMobile{
+    display:none;
   }
   .acessoMobile{
     display:block;
@@ -1059,6 +1054,12 @@ body {padding: 0; margin: 0;}
     background: #eee;
     height: 28px;
     padding: 10px 0 0 0;
+  }
+  .btnVersaoSimp{
+    display:none;
+  }
+  .divSideBarAcesso, .divSideBarAcessoBottom{
+    display:none;
   }
   .acessoMobile .btnAcessomobile{
     background:url(../img/icoAcesso.png) no-repeat 15px 5px;
@@ -1122,16 +1123,82 @@ body {padding: 0; margin: 0;}
   #portal-header .btnReclamacoes::first-letter{
     text-transform: uppercase;
   }
+  .divSlider{
+    float: left;
+    clear: both;
+    width: 100%;
+  }
+  .bx-wrapper{
+    width: 100%;
+    float: left;
+  }
+  .divDestaquesHome ul.destaquesHome li{
+    clear: both;
+  }
+  .divNoticiasHome .destaquesHome li{
+    clear: both;
+  }
+  #main{
+    float: none;
+  }
+  #content{
+    float:none;
+  }
+  .divNoticiasHome .destaquesHome li{
+    width: 90%;
+    margin-left: 3%;
+  }
+  .divDestaquesHome ul.destaquesHome li .txtDestaque{
+    width: 56%;
+  }
+  .divDestaquesHome ul.destaquesHome li{
+    text-align: center;
+    width: auto;
+  }
+  .bxslider li .contSliderHome{
+    width:85%;
+  }
+  .divSlider2 .bx-wrapper li .txtSlider2{
+    width: 90%;
+  }
+  .bxslider li .imgSliderHome{
+    width:95%;
+  }
+  #footer .logoFooter a{
+    width: 100%;
+    margin: 14px 0 0 0;
+    text-align: center;
+    background: url(../img/logoFooter.png) no-repeat center;
+  }
+  .copyright{
+    display: none;
+  }
+  #footer .footerBottom .divProdam{
+    float: none;
+    margin: 0 auto;
+  }
+  #footer .textoFooter{
+    text-align: center;
+    width: 100%;
+    margin: 0 0 0 0;
+  }
+  #portal-column-two .divSideBarPlacar{
+    margin-left: 5%;
+  }
+  .bxslider li .btnContinuar{
+    margin:-2px -9px -1px 0;
+  }
+  .bxslider li h1{
+    margin:10px 0 0 2%;
+  }
+  .bx-wrapper .bx-viewport{
+    height: auto !important;
+  }
 }
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
   .wrap{
-    width:992px;
+    width:100%;
   }
-}
-
-/* Large Devices, Wide Screens */
-@media only screen and (max-width : 1200px) {
-  
 }

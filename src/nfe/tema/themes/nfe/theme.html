@@ -255,51 +255,55 @@
                       valorPace1 = valorDevolutometroVelocidadeIncremento;
                           //]]>
                           </script>
-                          <span>Prestadores de serviços a emitir Nota Fiscal:</span>
-                          <br />
-                          <div id="flip-counter2" class="flip-counter"></div>
-                          <script type="text/javascript">
-                          //<![CDATA[
-                          $(function() {
-                              
-                              // Initialize a new counter
-                              var myCounter = new flipCounter('flip-counter2', {
-                                  value: valorInicioContador2 ,
-                                  inc: valorDeIncremento2 ,
-                                  pace: 1000,
-                                  numFractionalDigits:2 ,
-                                  auto: true,
-                                  formatNumberOptions: { format: "000,000", locale: "br" }
-                              });
-                      
-                          });
-                      valorDeIncremento2 = 0;
-                      valorInicioContador2 = prestadores;
-                          //]]>
-                          </script>
-                          <span>Notas Fiscais emitidas:</span>
-                          <br />
-                          <div id="flip-counter3" class="flip-counter"></div>
-                          <script type="text/javascript">
-                          //<![CDATA[
-                          $(function() {
-                              
-                              // Initialize a new counter
-                              var myCounter = new flipCounter('flip-counter3', {
-                                  value: valorQtdeNfsBase ,
-                                  inc: valorQtdeNfsIncremento ,
-                                  pace: valorPace3,
-                                  numFractionalDigits:2 ,
-                                  auto: true,
-                                  formatNumberOptions: { format: "000,000,000", locale: "br" }
-                              });
-                      
-                          });
-                      valorDeIncremento3 = 0;
-                      valorInicioContador3 = nfe;
-                      valorPace3 = valorDevolutometroVelocidadeIncremento;
-                          //]]>
-                          </script>
+                          <!--ESCONDE VERSAO MOBILE-->
+                          <div class="placarMobile">
+                                <span>Prestadores de serviços a emitir Nota Fiscal:</span>
+                                <br />
+                                <div id="flip-counter2" class="flip-counter"></div>
+                                <script type="text/javascript">
+                                //<![CDATA[
+                                $(function() {
+                                    
+                                    // Initialize a new counter
+                                    var myCounter = new flipCounter('flip-counter2', {
+                                        value: valorInicioContador2 ,
+                                        inc: valorDeIncremento2 ,
+                                        pace: 1000,
+                                        numFractionalDigits:2 ,
+                                        auto: true,
+                                        formatNumberOptions: { format: "000,000", locale: "br" }
+                                    });
+                            
+                                });
+                            valorDeIncremento2 = 0;
+                            valorInicioContador2 = prestadores;
+                                //]]>
+                                </script>
+                                <span>Notas Fiscais emitidas:</span>
+                                <br />
+                                <div id="flip-counter3" class="flip-counter"></div>
+                                <script type="text/javascript">
+                                //<![CDATA[
+                                $(function() {
+                                    
+                                    // Initialize a new counter
+                                    var myCounter = new flipCounter('flip-counter3', {
+                                        value: valorQtdeNfsBase ,
+                                        inc: valorQtdeNfsIncremento ,
+                                        pace: valorPace3,
+                                        numFractionalDigits:2 ,
+                                        auto: true,
+                                        formatNumberOptions: { format: "000,000,000", locale: "br" }
+                                    });
+                            
+                                });
+                            valorDeIncremento3 = 0;
+                            valorInicioContador3 = nfe;
+                            valorPace3 = valorDevolutometroVelocidadeIncremento;
+                                //]]>
+                                </script>
+                      </div>
+                      <!--FIM ESCONDE VERSAO MOBILE-->
                   </div>
                 </div>
               </div>
