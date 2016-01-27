@@ -271,9 +271,6 @@ nav.menu ul li:last-child a{
   text-align: center;
   padding: 20px 55px 0 0;
 }
-#content{
-  float: left;
-}
 .divSlider{
   float: left;
   width: 750px;
@@ -451,9 +448,13 @@ nav.menu ul li:last-child a{
   font-size:1.1em;
   color: #525252;
 }
+.divDestaquesHome {
+  width: 750px;
+}
 .divDestaquesHome ul.destaquesHome{
   width: 100%;
   float: left;
+  margin-left: 0!important;
 }
 .divDestaquesHome ul.destaquesHome li{
   width: 360px;
@@ -461,18 +462,20 @@ nav.menu ul li:last-child a{
   list-style: none;
   float: left;
 }
-.divDestaquesHome ul.destaquesHome li h2{
-  color:#ef7d00;
+.divDestaquesHome ul.destaquesHome li h2 a{
+  color:#ef7d00 !important;
   float: left;
   width: 100%;
   font-family: 'Bitter', Arial;
   font-weight: 600;
-  font-size: 1.6em;
+  font-size: 1.15em;
+  margin: 20px 0 20px 0;
 }
 .divDestaquesHome ul.destaquesHome li .imgDestaques{
   float: left;
   position: relative;
   z-index: 2;
+  margin-top: -15px;
 }
 .divDestaquesHome ul.destaquesHome li .txtDestaque{
   -webkit-border-top-right-radius: 12px;
@@ -485,11 +488,14 @@ nav.menu ul li:last-child a{
   z-index: 1;
   width: 210px;
   padding: 0 0 0 38px;
+  min-height: 110px;
 }
-.divDestaquesHome ul.destaquesHome li .txtDestaque p{
-  color:#002e55;
-  font-size: 0.8em;
-  padding: 0 10px 0 0;
+.divDestaquesHome ul.destaquesHome li .txtDestaque p a{
+  color:#002e55 !important;
+  font-size: 1em;
+  padding: 12px 10px 8px 8px;
+  float: left;
+  border-bottom: none !important;
 }
 .divNoticiasHome h2{
   color:#ef7d00;
