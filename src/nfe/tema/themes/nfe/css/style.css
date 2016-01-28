@@ -49,7 +49,7 @@ header{
 .acessibilidade span{
   float:left;
   font-family: Arial;
-  font-size: 0.7em;
+  font-size: 11px;
   margin:12px 0 0 0;
 }
 .acessibilidade ul{
@@ -73,14 +73,14 @@ header{
   text-decoration: none;
   font-family:Arial;
   font-weight: bold;
-  font-size:1.2em;
+  font-size:19px;
 }
 .acessibilidade ul li a.icoDiminuir{
-  font-size:0.9em;
+  font-size:14px;
   margin:3px 0 0 0;
 }
 .acessibilidade ul li a.icoContraste{
-  background:url(../img/icoContraste.png) no-repeat 0 1px;
+  background:url(../img/icoContraste.png) no-repeat 0 3px;
 }
 #portal-header #logo h1 a{
   background:url(../img/logoNfe.png) no-repeat;
@@ -211,7 +211,7 @@ nav.menu.cidadao{
 nav.menu.empresas{
   float:left;
   width: 100%;
-  min-height: 40px;  
+  min-height: 40px;
  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#fcc833+0,efb501+100 */
   background: #ef7d00; /* Old browsers */
   background: -moz-linear-gradient(top,  #ff921b 0%, #ef7d00 100%); /* FF3.6-15 */
@@ -238,8 +238,8 @@ nav.menu ul li.submenu:after {
   position: absolute;
   bottom: -8px;
   left: 45%;
-  width: 0; 
-  height: 0; 
+  width: 0;
+  height: 0;
 
   border-left: 5px solid transparent;
   border-right: 5px solid transparent;
@@ -296,6 +296,8 @@ nav.menu ul li:last-child a{
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
   padding: 20px 0 0 32px;
+  width:318px;
+  float: left;
 }
 #portal-column-two .divSideBarAcesso h2{
   background:url(../img/icoAcesso.png) no-repeat;
@@ -368,7 +370,7 @@ nav.menu ul li:last-child a{
   float: left;
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
-  border-radius: 6px;  
+  border-radius: 6px;
 }
 #portal-column-two .divSideBarAcessoBottom{
   background: #e0e0e0;
@@ -378,8 +380,8 @@ nav.menu ul li:last-child a{
   -moz-border-radius-bottomleft: 12px;
   border-bottom-right-radius: 12px;
   border-bottom-left-radius: 12px;
+  width:100%;
   float: left;
-  width: 100%;
 }
 #portal-column-two .divSideBarAcessoBottom p{
   padding: 10px 0 0 0;
@@ -407,7 +409,7 @@ nav.menu ul li:last-child a{
   clear: both;
   float: left;
   font-size: 1.1em;
-  font-weight:normal;  
+  font-weight:normal;
 }
 #portal-column-two .divSideBarAcessoBottom .btnApp{
   background:url(../img/icoApple.png) no-repeat 2px 0px;
@@ -540,7 +542,7 @@ nav.menu ul li:last-child a{
   font-weight: 500;
   float: left;
   width: 100%;
-  margin: 10px 0 0 0;  
+  margin: 10px 0 0 0;
 }
 .divNoticiasHome .destaquesHome li .btnContinuarLendo{
   -webkit-border-bottom-right-radius: 12px;
@@ -946,7 +948,7 @@ body {padding: 0; margin: 0;}
   background: #ef7d00;
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
-  border-radius: 2px;  
+  border-radius: 2px;
 }
 .divSlider .bx-wrapper .bx-pager.bx-default-pager a{
   background: #345877;
@@ -1099,7 +1101,7 @@ body {padding: 0; margin: 0;}
      color: #fff;
   }
 
-  #portal-header .divBusca input:-ms-input-placeholder {  
+  #portal-header .divBusca input:-ms-input-placeholder {
      color: #fff;
   }
   #portal-header .divBusca .searchButton{
@@ -1216,4 +1218,151 @@ body {padding: 0; margin: 0;}
   .wrap{
     width:100%;
   }
+}
+
+/*CONTRASTE*/
+body.contraste1, body.contraste1 #footer, body.contraste1 #footer .footerBottom, body.contraste1 .btnVersaoSimp, body.contraste1 #footer .textoFooter{
+  background: #000 !important;
+  color: #fff !important;
+}
+body.contraste1 .acessibilidade{
+  background: #000;
+  color: #fff;
+}
+body.contraste1 .acessibilidade ul li a{
+  color: #fff;
+}
+body.contraste1 .acessibilidade ul li a.icoContraste{
+  background: url(../img/icoContraste2.png) no-repeat 0 3px
+}
+body.contraste1 header{
+  background: #000;
+}
+body.contraste1 #portal-searchbox .searchButton{
+  background: #000;
+  border: 1px solid #fff;
+  color: #fff;
+}
+body.contraste1 .bxslider li h1 a{
+  color:#fff;
+}
+body.contraste1 .bxslider li p{
+  color:#fff;
+}
+body.contraste1 .divSlider .bx-wrapper .bx-pager.bx-default-pager a.active{
+  background: #999;
+}
+body.contraste1 .divSlider2 .bx-wrapper .bx-pager.bx-default-pager a.active{
+  color: #999;
+}
+body.contraste1 .divSlider .bx-wrapper .bx-pager.bx-default-pager a{
+  background: #fff;
+}
+body.contraste1 .informativosHome{
+  background: #000;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  border-left: none;
+  border-right: none;
+  color: #fff;
+}
+body.contraste1 .informativosHome .titImportante{
+  color: #fff;
+}
+body.contraste1 nav.menu.cidadao{
+  background: #000;
+  border-top: 1px solid #fff;
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
+  color: #fff;
+}
+body.contraste1 nav.menu ul li a{
+  color:#fff;
+}
+body.contraste1 body.contraste1 nav.menu ul li{
+  color: #fff;
+}
+body.contraste1 nav.menu ul li a{
+  border-right:1px solid #fff;
+}
+body.contraste1 #portal-header .btnReclamacoes{
+  background:url(../img/icoReclamacoes.png) no-repeat #000 8px 5px;
+}
+body.contraste1 nav.menu ul li.submenu:after{
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    position: absolute;
+    bottom: -8px;
+    left: 45%;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #fff;
+}
+body.contraste1 #portal-header ul.globalnav li{
+  border:1px solid #fff;
+  border-bottom:none;
+  color: #fff;
+  background: none;
+}
+body.contraste1 #portal-header ul.globalnav li a{
+  color: #fff;
+}
+body.contraste1 #portal-column-two .divSideBarPlacar{
+  border: 1px solid #fff;
+  background: #000;
+}
+body.contraste1 #portal-column-two .divSideBarAcessoBottom{
+  border: 1px solid #fff;
+  background: #000;
+}
+body.contraste1 #portal-column-two .divSideBarAcesso{
+  border: 1px solid #fff;
+  background: #000;
+  border-bottom:none;
+}
+body.contraste1 #portal-column-two .divSideBarAcessoBottom p, body.contraste1 .divSlider2 .bx-wrapper li .txtSlider2 p, body.contraste1 .divSlider2 .bx-wrapper li .txtSlider2 h3, body.contraste1 .divSlider2 .bx-wrapper li .txtSlider2 p a{
+  color:#fff;
+}
+body.contraste1 #portal-column-two .divSideBarAcesso .acessoSistema .esqueciSenha li a. body.contraste1 .divNoticiasHome h2{
+  color:#fff;
+}
+body.contraste1 #portal-column-two .divSideBarAcessoBottom .btnPlay span,body.contraste1  #portal-column-two .divSideBarAcessoBottom .btnApp,body.contraste1  #portal-column-two .divSideBarAcesso h2, body.contraste1 #portal-column-two .divSideBarAcesso .acessoSistema .esqueciSenha li, body.contraste1 #portal-column-two .divSideBarPlacar h2, body.contraste1 #banner_placar span{
+  color:#fff;
+}
+body.contraste1 #portal-column-two .divSideBarAcesso .acessoSistema .btnEntrar{
+  background: #000;
+  border: 1px solid #fff;
+}
+body.contraste1 #portal-column-two .divSideBarAcesso .btnAcessoCertificado{
+  background:url(../img/icoCadeado.png) no-repeat 22px 8px;
+  border: 1px solid #fff;
+}
+body.contraste1 .divDestaquesHome ul.destaquesHome li .txtDestaque,body.contraste1  .divSlider2 .bx-wrapper .bx-pager{
+  background: none;
+  border: 1px solid #fff;
+}
+body.contraste1 .divSlider2 .bx-wrapper li .sliderNumber, body.contraste1 .divSlider2 .bx-wrapper .bx-pager.bx-default-pager a{
+  background: none;
+  border: 1px solid #fff;
+}
+body.contraste1 .divSlider2 .bx-wrapper li{
+  background: none;
+  border-left: 1px solid #fff;
+  border-right: 1px solid #fff;
+}
+body.contraste1 .flip-counter li{
+  background:url(../js/flipcounter/digit_prodam_mini2.png) 0 0 no-repeat;
+}
+body.contraste1 #portal-column-two .divSideBarAcesso .acessoSistema .esqueciSenha li a, body.contraste1 .divNoticiasHome .destaquesHome li h3, body.contraste1 .divNoticiasHome .destaquesHome li p, body.contraste1 .divNoticiasHome .destaquesHome span.data{
+  color:#fff;
+}
+body.contraste1 #portal-header .logoFinancas a{
+  background: url(../img/logoFinancas2.png) no-repeat;
+}
+body.contraste1 #footer .logoFooter a{
+  background: url(../img/logoFooter2.png) no-repeat;
 }

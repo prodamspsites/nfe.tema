@@ -9,6 +9,7 @@
     <link href='https://fonts.googleapis.com/css?family=Bitter:400,700' rel='stylesheet' type='text/css'>
     <!--JS-->
     <script src="js/jquery.1.8.2.min.js"></script>
+    <script src="js/jquery.cookie.js"></script>
     <script src="js/bxslider.min.js"></script>
     <script src="js/funcoes.js"></script>
   </head>
@@ -18,10 +19,10 @@
       <div class="acessibilidade">
         <span>ACESSIBILIDADE</span>
         <ul>
-            <li><a href="Aumentar fonte" class="icoAumentar">A+</a></li>
-            <li><a href="Aumentar fonte" class="icoDiminuir">A-</a></li>
-            <li><a href="Aumentar fonte" class="icoResetar">A</a></li>
-            <li><a href="Aumentar fonte" class="icoContraste"></a></li>
+            <li><a href="Aumentar fonte" class="icoAumentar fontResizer_add">A+</a></li>
+            <li><a href="Aumentar fonte" class="icoDiminuir fontResizer_minus">A-</a></li>
+            <li><a href="Aumentar fonte" class="icoResetar fontResizer_reset">A</a></li>
+            <li><a href="Aumentar fonte" class="icoContraste btn-contraste1"></a></li>
         </ul>
       </div>
     </div>
@@ -243,7 +244,6 @@
                           <script type="text/javascript">
                           //<![CDATA[
                           $(function() {
-                              
                               // Initialize a new counter
                               var myCounter = new flipCounter('flip-counter1', {
                                   value: valorInicioContador1 ,
@@ -253,7 +253,6 @@
                                   auto: true,
                                   formatNumberOptions: { format: "000,000,000.00", locale: "br" }
                               });
-                      
                           });
                       valorDeIncremento1 = valorDevolutometroDeIncremento;
                       valorInicioContador1 = valorDevolutometroInicioContador;
@@ -268,7 +267,6 @@
                                 <script type="text/javascript">
                                 //<![CDATA[
                                 $(function() {
-                                    
                                     // Initialize a new counter
                                     var myCounter = new flipCounter('flip-counter2', {
                                         value: valorInicioContador2 ,
@@ -278,7 +276,6 @@
                                         auto: true,
                                         formatNumberOptions: { format: "000,000", locale: "br" }
                                     });
-                            
                                 });
                             valorDeIncremento2 = 0;
                             valorInicioContador2 = prestadores;
@@ -290,7 +287,6 @@
                                 <script type="text/javascript">
                                 //<![CDATA[
                                 $(function() {
-                                    
                                     // Initialize a new counter
                                     var myCounter = new flipCounter('flip-counter3', {
                                         value: valorQtdeNfsBase ,
@@ -300,7 +296,6 @@
                                         auto: true,
                                         formatNumberOptions: { format: "000,000,000", locale: "br" }
                                     });
-                            
                                 });
                             valorDeIncremento3 = 0;
                             valorInicioContador3 = nfe;

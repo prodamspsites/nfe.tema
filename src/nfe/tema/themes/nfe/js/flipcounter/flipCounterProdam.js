@@ -26,18 +26,18 @@ var flipCounter = function(d, options) {
     };
 
     var o = options || {},
-	doc = window.document,
-	divId = typeof d !== 'undefined' && d !== '' ? d : 'flip-counter',
-	div = doc.getElementById(divId);
+    doc = window.document,
+    divId = typeof d !== 'undefined' && d !== '' ? d : 'flip-counter',
+    div = doc.getElementById(divId);
 
     for (var opt in defaults) o[opt] = (opt in o) ? o[opt] : defaults[opt];
 
     var digitsOld = [], digitsNew = [], subStart, subEnd, x, y, nextCount = null, newDigit, newComma,
-	best = {
-	    q: null,
-	    pace: 0,
-	    inc: 0
-	};
+    best = {
+        q: null,
+        pace: 0,
+        inc: 0
+    };
 
     /**
     * Sets the value of the counter and animates the digits to new value.
@@ -181,9 +181,9 @@ var flipCounter = function(d, options) {
         // Smart increment
         if (typeof t != 'undefined') {
             var time = isNumber(t) ? t * 1000 : 10000,
-			pace = typeof p != 'undefined' && isNumber(p) ? p : o.pace,
-			diff = typeof n != 'undefined' && isNumber(n) ? n - o.value : 0,
-			cycles, inc, check, i = 0;
+            pace = typeof p != 'undefined' && isNumber(p) ? p : o.pace,
+            diff = typeof n != 'undefined' && isNumber(n) ? n - o.value : 0,
+            cycles, inc, check, i = 0;
             best.q = null;
 
             // Initial best guess
@@ -258,14 +258,14 @@ var flipCounter = function(d, options) {
 
     function doIncrement(n, s, c) {
         var val = o.value,
-		smart = (typeof s == 'undefined') ? false : s,
-		cycles = (typeof c == 'undefined') ? 1 : c;
+        smart = (typeof s == 'undefined') ? false : s,
+        cycles = (typeof c == 'undefined') ? 1 : c;
 
         if (smart === true) cycles--;
 
         if (val != n) {
             x = o.value,
-			o.auto = true;
+            o.auto = true;
 
             if (val + o.inc <= n && cycles != 0) val += o.inc
             else val = n;
@@ -284,8 +284,8 @@ var flipCounter = function(d, options) {
         digitsNew = splitToArray(y);
 
         var diff,
-		xlen = digitsOld.length,
-		ylen = digitsNew.length;
+        xlen = digitsOld.length,
+        ylen = digitsNew.length;
 
         if (ylen > xlen) {
             diff = ylen - xlen;
@@ -312,15 +312,15 @@ var flipCounter = function(d, options) {
 
     function animateDigit(n, oldDigit, newDigit) {
         var speed, step = 0, w, a,
-		bp = [
-			'-' + o.fW + 'px -' + (oldDigit * o.tFH) + 'px',
-			(o.fW * -2) + 'px -' + (oldDigit * o.tFH) + 'px',
-			'0 -' + (newDigit * o.tFH) + 'px',
-			'-' + o.fW + 'px -' + (oldDigit * o.bFH + o.bOffset) + 'px',
-			(o.fW * -2) + 'px -' + (newDigit * o.bFH + o.bOffset) + 'px',
-			(o.fW * -3) + 'px -' + (newDigit * o.bFH + o.bOffset) + 'px',
-			'0 -' + (newDigit * o.bFH + o.bOffset) + 'px'
-		];
+        bp = [
+            '-' + o.fW + 'px -' + (oldDigit * o.tFH) + 'px',
+            (o.fW * -2) + 'px -' + (oldDigit * o.tFH) + 'px',
+            '0 -' + (newDigit * o.tFH) + 'px',
+            '-' + o.fW + 'px -' + (oldDigit * o.bFH + o.bOffset) + 'px',
+            (o.fW * -2) + 'px -' + (newDigit * o.bFH + o.bOffset) + 'px',
+            (o.fW * -3) + 'px -' + (newDigit * o.bFH + o.bOffset) + 'px',
+            '0 -' + (newDigit * o.bFH + o.bOffset) + 'px'
+        ];
 
         if (o.auto === true && o.pace <= 300) {
             switch (n) {
