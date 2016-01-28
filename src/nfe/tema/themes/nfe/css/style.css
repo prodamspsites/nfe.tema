@@ -26,6 +26,9 @@ body{
   margin: 0;
   padding:0;
 }
+h3{
+  font-family:"Fira Sans", Arial, Verdana !important;
+}
 .wrap{
   margin:0 auto;
   width:1100px;
@@ -497,31 +500,29 @@ nav.menu ul li:last-child a{
   float: left;
   border-bottom: none !important;
 }
-.divNoticiasHome h2{
+.cover-collection-tile .tile-header h2{
   color:#ef7d00;
   float: left;
   width: 100%;
   font-family: 'Bitter', Arial;
   margin: 10px 0 10px 38px;
   font-weight: 600;
-  font-size: 1.6em;
+  font-size: 2em;
+  letter-spacing: 0;
 }
-.divNoticiasHome .destaquesHome span.data{
+.cover-collection-tile .collection-item time{
   color:#525252;
-  font-size: 0.8em;
+  font-size: 1em;
   float: left;
   width: 100%;
   margin: 10px 0 0 0;
 }
-.divNoticiasHome{
+.cover-collection-tile{
   float:left;
-}
-.divNoticiasHome .destaquesHome{
-  float:left;
-  margin: 0;
+  margin-bottom: 20px;
   padding:0;
 }
-.divNoticiasHome .destaquesHome li{
+.cover-collection-tile .collection-item{
   border:1px solid #eee;
   -webkit-border-top-right-radius: 12px;
   -webkit-border-bottom-right-radius: 12px;
@@ -532,17 +533,18 @@ nav.menu ul li:last-child a{
   list-style: none;
   width: 333px;
   float:left;
-  margin: 15px 25px 0 0;
+  margin: 15px 10px 0 0;
   padding: 5px 5px 5px 10px;
 }
-.divNoticiasHome .destaquesHome li h3{
+#content .cover-collection-tile .collection-item h3 a{
   color:#002e55;
   font-weight: 500;
   float: left;
   width: 100%;
-  margin: 10px 0 0 0;  
+  margin: 10px 0 0 0;
+  font-size: 1.17em;
 }
-.divNoticiasHome .destaquesHome li .btnContinuarLendo{
+#content .cover-collection-tile .collection-item .btnContinuarLendo{
   -webkit-border-bottom-right-radius: 12px;
   -moz-border-radius-bottomright: 12px;
   border-bottom-right-radius: 12px;
@@ -551,11 +553,11 @@ nav.menu ul li:last-child a{
   text-decoration: none;
   float: right;
   padding: 8px 30px 8px 30px;
-  font-size: 0.8em;
+  font-size: 1em;
   margin: 0 -5px -5px 0;
   position: relative;
 }
-.divNoticiasHome .destaquesHome li .btnContinuarLendo:before{
+#content .cover-collection-tile .collection-item .btnContinuarLendo:before{
     content: "";
     position: absolute;
     right: 100%;
@@ -566,18 +568,19 @@ nav.menu ul li:last-child a{
     border-right: 8px solid #eee;
     border-bottom: 0px solid transparent;
 }
-.divNoticiasHome .destaquesHome li p{
-  font-size: 0.8em;
+.cover-collection-tile .collection-item p{
+  font-size: 1em;
   color: #525252;
+  line-height: 15px;
 }
-.btnVersaoSimp{
+#content .tile-content p .btnVersaoSimp{
   float:left;
   width: 98%;
   padding:8px 0 8px 0;
   font-weight: 500;
-  font-size: 0.9em;
+  font-size: 1.1em;
   text-align: center;
-  color:#002e55;
+  color:#002e55 !important;
   background: #eee;
   text-decoration: none;
   margin: 15px 0 15px 0;
@@ -1099,7 +1102,7 @@ body {padding: 0; margin: 0;}
      color: #fff;
   }
 
-  #portal-header .divBusca input:-ms-input-placeholder {  
+  #portal-header .divBusca input:-ms-input-placeholder {
      color: #fff;
   }
   #portal-header .divBusca .searchButton{
