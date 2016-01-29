@@ -218,11 +218,47 @@ nav.menu.empresas{
   background: -webkit-linear-gradient(top,  #ff921b 0%,#ef7d00 100%); /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(to bottom,  #ff921b 0%,#ef7d00 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff921b', endColorstr='#ef7d00',GradientType=0 ); /* IE6-9 */
+  display:none;
+}
+nav.menu.empresas ul li a{
+  border-right: 1px solid #f89b34;
+}
+nav.menu.empresas ul li.submenu:hover{
+  background: #fac575;
+  padding: 15px 0 10px 0;
+}
+nav.menu.cidadao ul li.submenu:hover{
+  background:#ffe698;
+  padding: 15px 0 10px 0;
+}
+nav.menu.cidadao ul li.submenu ul.menuLista{
+  background:#ffe698;
+  position: absolute;
+  bottom: -160px;
+  float: left;
+  z-index: 1;
+  width: auto;
+  display: none;
+}
+nav.menu.cidadao ul li.submenu ul.menuLista li:hover{
+  background: #fcc833;
+}
+nav.menu.empresas ul li.submenu ul.menuLista{
+  background: #fac575;
+  position: absolute;
+  bottom: -160px;
+  float: left;
+  z-index: 1;
+  width: auto;
+  display: none;
+}
+nav.menu.empresas ul li.submenu ul.menuLista li:hover{
+  background: #ff921b;
 }
 nav.menu ul{
   float: left;
   width: 100%;
-  margin: 12px 0 0 0;
+  margin: 0 0 0 0;
   padding: 0;
 }
 nav.menu ul li{
@@ -230,6 +266,10 @@ nav.menu ul li{
   display: inline;
   position: relative;
   float: left;
+  padding: 15px 0 0 0;
+}
+nav.menu ul li.submenu {
+  position: relative;
 }
 nav.menu ul li.submenu:after {
   content: "";
@@ -244,6 +284,36 @@ nav.menu ul li.submenu:after {
   border-left: 5px solid transparent;
   border-right: 5px solid transparent;
   border-top: 5px solid #002e55;
+}
+nav.menu ul li.submenu:hover:after{
+  display: none;
+}
+nav.menu ul li.submenu ul.menuLista{
+  display: block;
+  -webkit-box-shadow: 0px 6px 20px -2px rgba(0,0,0,0.21);
+  -moz-box-shadow: 0px 6px 20px -2px rgba(0,0,0,0.21);
+  box-shadow: 0px 6px 20px -2px rgba(0,0,0,0.21);
+  min-width: 230px;
+}
+nav.menu ul li.submenu ul.menuLista li{
+  display: block;
+  clear: both;
+  border-bottom: 1px solid #fff;
+  float: left;
+  width: 100%;
+}
+nav.menu ul li.submenu ul.menuLista li:first-child{
+  border-top:1px solid #fff;
+}
+nav.menu ul li.submenu ul.menuLista li:last-child{
+  border-bottom:none;
+}
+nav.menu ul li.submenu ul.menuLista li a{
+  padding: 0px 7px 9px 7px;
+  float: left;
+  width: 100%;
+  font-weight: 400;
+  font-size: 0.8em;
 }
 nav.menu ul li a{
   text-decoration: none;

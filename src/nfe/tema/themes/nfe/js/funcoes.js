@@ -8,6 +8,19 @@ $(document).ready(function(){
       pager: 'short'
     });
 
+    //MENU
+    $('ul.globalnav li.cidadao').click(function(){
+        $('nav.menu.empresas').hide();
+        $('nav.menu.cidadao').show();
+    });
+    $('ul.globalnav li.empresas').click(function(){
+        $('nav.menu.empresas').show();
+        $('nav.menu.cidadao').hide();
+    });
+
+    $('nav.menu ul li.submenu').hover(function(){
+        $(this).find('.menuLista').toggle();
+    });
 
     // Cria os Cookies
         if ($.cookie('contraste1') === "true") {
