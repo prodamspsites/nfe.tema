@@ -20,7 +20,6 @@
  * http://jigsaw.w3.org/css-validator/
  */
 
-
 body{
   font-family:"Fira Sans", Arial, Verdana !important;
   margin: 0;
@@ -167,7 +166,9 @@ header{
   -moz-border-radius: 2px;
   border-radius: 2px;
 }
-
+#portal-header .menuResp{
+  display: none;
+}
 #portal-searchbox .hiddenStructure{
   display:none;
 }
@@ -678,6 +679,9 @@ div.managePortletsLink{
   margin: 0 0 0 2%;
   font-weight: normal;
 }
+.bx-wrapper > .bx-viewport > .bx-wrapper > .bx-controls{
+  display:none;
+}
 #content .bxslider li h1 a{
   color:#002e55;
   text-decoration:none;
@@ -907,7 +911,7 @@ body {padding: 0; margin: 0;}
 
 .bx-wrapper .bx-controls-direction a {
   position: absolute;
-  top: 33%;
+  top: 20%;
   margin-top: -16px;
   outline: 0;
   width: 32px;
@@ -1126,6 +1130,13 @@ body {padding: 0; margin: 0;}
     width: 100%;
   }
   #portal-column-two{
+    clear: both;
+    margin-left: -100.875% !important;
+  }
+  .divDestaquesHome{
+    width: 100%;
+  }
+  #portal-column-two{
   width: calc(100% - 32px);
   }
   .bxslider li .contSliderHome{
@@ -1200,8 +1211,8 @@ body {padding: 0; margin: 0;}
   }
   #portal-header .btnReclamacoes{
     position: absolute;
-    top: 85px;
-    left: 110px;
+    top: 66px;
+    left: 147px;
     width: 128px;
     -webkit-border-radius: 8px;
     -moz-border-radius: 8px;
@@ -1210,8 +1221,63 @@ body {padding: 0; margin: 0;}
     text-transform: lowercase;
     height: 24px;
   }
+  #portal-header .LSBox{
+    float:left;
+    margin: -10px 0 0 0;
+  }
   #portal-header .btnReclamacoes::first-letter{
     text-transform: uppercase;
+  }
+  #portal-header .menuResp{
+    background:url(../img/menuResp.png) no-repeat 0 0;
+    float: left;
+    width: 29px;
+    height: 50px;
+    margin: 46px 5px 0 5px;
+    display: block;
+    text-indent: -9999px;
+  }
+  nav.menu ul li.submenu:after{
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    position: absolute;
+    bottom: 9px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #002e55;
+  }
+  nav.menu ul li.submenu.active{
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  position: absolute;
+  bottom: 9px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid black;
+  }
+  nav.menu.cidadao{
+    background: #fcc833;
+  }
+  nav.menu.cidadao ul li.submenu ul.menuLista{
+    width: 100%;
+  }
+  nav.menu ul li{
+    width:100%;
+  }
+  nav.menu ul li.submenu:hover{
+    background: none ;
+  }
+  nav.menu ul li{
+    display: block;
+    clear: both;
   }
   .divSlider{
     float: left;
@@ -1262,7 +1328,6 @@ body {padding: 0; margin: 0;}
   .bx-controls-direction{
     display: block;
   }
-  .bx-controls-direction{
   #footer .logoFooter a{
     width: 100%;
     margin: 14px 0 0 0;

@@ -22,6 +22,14 @@ $(document).ready(function(){
         $(this).find('.menuLista').toggle();
     });
 
+    //MENU MOBILE
+    if (screen.width<=800){}
+        $('nav.menu ul li.submenu').click(function(){
+            $(this).toggleClass('active');
+            $(this).find('.menuLista').toggle();
+        });
+    }
+
     // Cria os Cookies
         if ($.cookie('contraste1') === "true") {
             $('body').addClass('contraste1');
@@ -75,7 +83,7 @@ $(document).ready(function(){
             $('body').css("font-size",maisUm+"px");
         }
         function resetFont(){
-            $('body').css("font-size","12px");
+            $('body').css("font-size","19px");
 
             $.removeCookie('contraste2', { path: '/' });
             $.removeCookie('contraste1', { path: '/' });
