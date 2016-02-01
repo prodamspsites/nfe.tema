@@ -668,7 +668,7 @@ div.managePortletsLink{
 .bxslider li .imgSliderHome{
   float:left;
   width: 50%;
-  margin: 0 0 0 -25px;
+  margin: 0 0 0 0;
 }
 .bxslider li h1{
   width: 100%;
@@ -728,6 +728,7 @@ div.managePortletsLink{
   width: 45%;
   min-height: 282px;
 }
+
 #footer{
   float:left;
   clear: both;
@@ -791,7 +792,7 @@ div.managePortletsLink{
 body {padding: 0; margin: 0;}
 .flip-counter{width: 225px; margin: 5px 0 8px;height: 28px; display: block;}
 .flip-counter ul.cd{float:left;list-style-type:none;margin:0;padding:0}
-.flip-counter li{background:url(../js/flipcounter/digit_prodam_mini.png) 0 0 no-repeat;}
+.flip-counter li{background:url(../js/flipcounter/digit_prodam_mini.png) 0 0 no-repeat; display: block;}
 .flip-counter li.t{background-position:0 0;width:17px;height:14px}
 .flip-counter li.b{background-position:0 0;width:17px;height:19px}
 .flip-counter li.s{background-position:-17px -329px;width:4px;height:31px}
@@ -894,26 +895,19 @@ body {padding: 0; margin: 0;}
 /* DIRECTION CONTROLS (NEXT / PREV) */
 
 .bx-wrapper .bx-prev {
-  left: 10px;
-  background: url(images/controls.png) no-repeat 0 -32px;
+  left: 18px;
+  background: url(../img/btnSliderRight.png) no-repeat center;
 }
 
 .bx-wrapper .bx-next {
-  right: 10px;
-  background: url(images/controls.png) no-repeat -43px -32px;
+  right: 11px;
+  background: url(../img/btnSliderLeft.png) no-repeat center;
 }
 
-.bx-wrapper .bx-prev:hover {
-  background-position: 0 0;
-}
-
-.bx-wrapper .bx-next:hover {
-  background-position: -43px 0;
-}
 
 .bx-wrapper .bx-controls-direction a {
   position: absolute;
-  top: 50%;
+  top: 33%;
   margin-top: -16px;
   outline: 0;
   width: 32px;
@@ -1050,7 +1044,7 @@ body {padding: 0; margin: 0;}
   -moz-border-radius-topright: 12px;
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
-  margin: -5px 0 0 -25px;
+  margin: -5px 0 0 -20px;
 }
 .divSlider2 .bx-wrapper li{
   background: #eee;
@@ -1110,6 +1104,9 @@ body {padding: 0; margin: 0;}
   color: #fff;
   font-size: 1.3em;
   padding: 4px;
+}
+.bx-controls-direction{
+  display: none;
 }
 #content .divSlider2 .bx-wrapper .bx-pager.bx-default-pager a.active{
   color:#ef7d00;
@@ -1262,6 +1259,10 @@ body {padding: 0; margin: 0;}
   .bxslider li .imgSliderHome{
     width:95%;
   }
+  .bx-controls-direction{
+    display: block;
+  }
+  .bx-controls-direction{
   #footer .logoFooter a{
     width: 100%;
     margin: 14px 0 0 0;
