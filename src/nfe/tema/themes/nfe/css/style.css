@@ -211,6 +211,8 @@ nav.menu.cidadao{
   background: -webkit-linear-gradient(top,  #fcc833 0%,#efb501 100%); /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(to bottom,  #fcc833 0%,#efb501 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcc833', endColorstr='#efb501',GradientType=0 ); /* IE6-9 */
+  position: relative;
+  z-index: 2;
 }
 nav.menu.empresas{
   float:left;
@@ -223,17 +225,17 @@ nav.menu.empresas{
   background: linear-gradient(to bottom,  #ff921b 0%,#ef7d00 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff921b', endColorstr='#ef7d00',GradientType=0 ); /* IE6-9 */
   display:none;
+  position: relative;
+  z-index: 2;
 }
 nav.menu.empresas ul li a{
   border-right: 1px solid #f89b34;
 }
 nav.menu.empresas ul li.submenu:hover{
   background: #fac575;
-  padding: 15px 0 10px 0;
 }
 nav.menu.cidadao ul li.submenu:hover{
   background:#ffe698;
-  padding: 15px 0 10px 0;
 }
 nav.menu.cidadao ul li.submenu ul.menuLista{
   background:#ffe698;
@@ -274,13 +276,14 @@ nav.menu ul li{
 }
 nav.menu ul li.submenu {
   position: relative;
+  padding-bottom: 10px;
 }
 nav.menu ul li.submenu:after {
   content: "";
   display: inline-block;
   vertical-align: middle;
   position: absolute;
-  bottom: -8px;
+  bottom: 3px;
   left: 45%;
   width: 0;
   height: 0;
@@ -407,6 +410,11 @@ div.managePortletsLink{
   color:#002e55;
   font-size: 1em;
 }
+#portal-column-two .divSideBarAcesso .acessoSistema .esqueciSenha li.divisaoEsquec{
+  font-size:13px;
+  padding: 0 4px 0 4px;
+  margin: 3px 0 0 0;
+}
 #portal-column-two .divSideBarAcesso .acessoSistema .esqueciSenha li a{
   color:#002e55;
   font-size: 0.8em;
@@ -441,7 +449,7 @@ div.managePortletsLink{
   background:url(../img/icoCadeado.png) no-repeat #002e55 22px 8px;
   width: 231px;
   height: 22px;
-  padding: 8px 0 0 60px;
+  padding: 5px 0 4px 60px;
   font-size: 0.8em;
   margin: 10px 0 10px 0;
   text-decoration: none;
@@ -527,6 +535,23 @@ div.managePortletsLink{
   margin: 0 0 0 0;
   font-size:1.1em;
   color: #525252;
+}
+/* INTERNA NOTICIAS*/
+#content #parent-fieldname-title{
+  color: #ef7d00;
+  font-family: "Bitter", Arial;
+  line-height: 1.1em;
+  margin: 15px 0 25px 0;
+}
+#content-core p{
+  color:#525252;
+  font-family: 'Fira Sans',Arial;
+}
+#content .documentDescription, #content #description{
+  float:left;
+  width: 100%;
+  margin: 20px 0 20px 0;
+  color:#525252;
 }
 .divDestaquesHome {
   width: 750px;
@@ -1152,7 +1177,7 @@ body {padding: 0; margin: 0;}
     border-bottom: 1px solid #fff;
     border-top: 1px solid #fff;
     width: 100%;
-    background: #eee;
+    background: #e0e0e0;
     height: 28px;
     padding: 10px 0 0 0;
   }
@@ -1237,47 +1262,65 @@ body {padding: 0; margin: 0;}
     display: block;
     text-indent: -9999px;
   }
-  nav.menu ul li.submenu:after{
+  #portal-header .divSection{
+    width: 100%;
+    margin: 8px 0 6px 0;
+    padding: 0;
+  }
+  .divMenu, .menuSite{
+    display: none;
+  }
+  nav.menu.cidadao ul li.submenu:after, nav.menu.empresas ul li.submenu:after{
     content: "";
     display: inline-block;
     vertical-align: middle;
     position: absolute;
-    bottom: 9px;
-    right: 10px;
+    top: 15px;
+    left: 95%;
     width: 0;
     height: 0;
     border-left: 5px solid transparent;
     border-right: 5px solid transparent;
     border-top: 5px solid #002e55;
+    float: left;
   }
-  nav.menu ul li.submenu.active{
-  content: "";
-  display: inline-block;
-  vertical-align: middle;
-  position: absolute;
-  bottom: 9px;
-  right: 10px;
-  width: 0;
-  height: 0;
-  border-left: 5px solid transparent;
-  border-right: 5px solid transparent;
-  border-bottom: 5px solid black;
+  nav.menu ul li.submenu.active:after{
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    position: absolute;
+    top: 15px;
+    left: 95%;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top:none;
+    float: left;
+    border-bottom: 5px solid #002e55;
   }
   nav.menu.cidadao{
     background: #fcc833;
   }
-  nav.menu.cidadao ul li.submenu ul.menuLista{
+  nav.menu.cidadao ul li.submenu ul.menuLista, nav.menu.empresas ul li.submenu ul.menuLista{
     width: 100%;
+    position: relative;
+    bottom:0;
+    margin: 13px 0 0 0;
+
   }
   nav.menu ul li{
     width:100%;
   }
-  nav.menu ul li.submenu:hover{
+  nav.menu.cidadao ul li.submenu:hover, nav.menu.empresas ul li.submenu:hover{
     background: none ;
   }
   nav.menu ul li{
     display: block;
     clear: both;
+  }
+  nav.menu ul li.submenu.active{
+    padding-bottom: 0;
   }
   .divSlider{
     float: left;
