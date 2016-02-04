@@ -225,8 +225,9 @@ nav.menu.empresas{
 nav.menu ul{
   float: left;
   width: 100%;
-  margin: 12px 0 0 0;
+  margin: 0 0 0 0 !important;
   padding: 0;
+  background: none !important;
 }
 nav.menu ul li{
   list-style: none;
@@ -250,17 +251,21 @@ nav.menu ul li.submenu:after {
 }
 nav.menu ul li a{
   text-decoration: none;
-  color: #002e55;
+  color: #002e55 !important;
   font-weight: 500;
   font-size: 0.9em;
-  border-right:1px solid #fcc833;
-  padding: 0 15px 0 0;
+  border-right:1px solid #fcc833 !important;
+  padding: 0 15px 0 0 !important;
   margin: 0 0 0 15px;
   height: 15px;
   float: left;
+  background: none !important;
 }
 nav.menu ul li:last-child a{
   border-right:none;
+}
+#portal-globalnav > li.selected > a{
+  height: 28px;
 }
 .informativosHome{
   width: 100%;

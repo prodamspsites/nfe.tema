@@ -16,6 +16,8 @@
         <replace css:theme=".logoFinancas" css:content=".logoFinancas" />
         <replace css:theme-children=".divReclamacao" css:content-children="#button-reclamacoes" />
         <replace css:theme-children=".acessoMobile" css:content="#acesso-mobile" />
+        <replace css:theme-children=".menu.cidadao" css:content="#portal-globalnav" />
+
 
         <copy attributes="class" css:theme="#portal-column-content" css:content="#portal-column-content" />
         <replace css:content="#portal-column-one" css:theme="#portal-column-one" />
