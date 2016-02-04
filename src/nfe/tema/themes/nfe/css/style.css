@@ -235,12 +235,12 @@ nav.menu ul li{
   position: relative;
   float: left;
 }
-nav.menu ul li.submenu:after {
+nav.menu ul li a.hasChildrens:after {
   content: "";
   display: inline-block;
   vertical-align: middle;
   position: absolute;
-  bottom: -8px;
+  bottom: 0px;
   left: 45%;
   width: 0; 
   height: 0; 
@@ -249,15 +249,27 @@ nav.menu ul li.submenu:after {
   border-right: 5px solid transparent;
   border-top: 5px solid #002e55;
 }
+nav.menu ul li ul.globalSectionsLevel1 li a{
+  background: #ffe698 !important;
+  width: 100%;
+}
+nav.menu ul li ul.globalSectionsLevel1 li a span{
+  float:left;
+  padding-left: 13px;
+  font-size: 0.9em;
+}
+nav.menu ul li ul.globalSectionsLevel1 li a:hover{
+  background: #fcc833 !important;
+}
 nav.menu ul li a{
   text-decoration: none;
   color: #002e55 !important;
   font-weight: 500;
-  font-size: 0.9em;
+  font-size: 1.1em;
   border-right:1px solid #fcc833 !important;
-  padding: 0 15px 0 0 !important;
   margin: 0 0 0 15px;
-  height: 15px;
+  height: 29px !important;
+  padding: 10px 10px 0 0 !important;
   float: left;
   background: none !important;
 }
