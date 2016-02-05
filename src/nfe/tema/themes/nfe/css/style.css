@@ -1144,7 +1144,60 @@ body {padding: 0; margin: 0;}
 .acessoMobile{
   display:none;
 }
-
+.divAccordeon{
+  float:left;
+  clear: both;
+  width: 100%;
+  margin: 20px 0 20px 0;
+}
+.divAccordeon h3{
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  color:#002e55;
+  padding: 8px 0 5px 4%;
+  float: left;
+  width: 96%;
+  font-size: 0.9em;
+  cursor: pointer;
+  margin: 8px 0 0 0;
+  background: url(../img/icoAcc-off.png)  5px 8px no-repeat #eee;
+}
+.divAccordeon h3.active{
+  background: url(../img/icoAcc-on.png)  5px 8px no-repeat #eee;
+}
+.divAccordeon .textoAccordeon{
+  float: left;
+  clear: both;
+ -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  border: 1px solid #eee;
+  margin: 5px 0 0 0;
+  width: 100%;
+}
+.divAccordeon .textoAccordeon p{
+  padding: 10px;
+  float: left;
+  color: #525252;
+  font-size: 0.9em;
+}
+.divAccordeon .textoAccordeon ul{
+  padding: 10px;
+  float: left;
+  list-style: disc;
+  margin: 8px 0 0 15px;
+}
+.divAccordeon .textoAccordeon ul li{
+  display: block;
+  float: left;
+  clear: both;
+  padding: 0 0 15px 0;
+  color: #525252;
+  font-size: 0.9em;
+  display: list-item;
+  list-style-type: disc;
+}
 /* ==========================================================================
    Adaptações responsivas
    ========================================================================== */
