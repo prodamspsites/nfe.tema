@@ -365,6 +365,11 @@ nav.menu ul li:last-child a{
   width:350px;
   margin-top: 20px;
 }
+#portal-column-two.fixo{
+  position:fixed;
+  margin-left: -30%;
+  top:0;
+}
 div.managePortletsLink{
   background: none !important;
 }
