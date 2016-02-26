@@ -245,7 +245,7 @@ nav.menu.cidadao ul li.submenu:hover{
 nav.menu.cidadao ul li.submenu ul.menuLista{
   background:#ffe698;
   position: absolute;
-  bottom: -160px;
+  top: 40px;
   float: left;
   z-index: 1;
   width: auto;
