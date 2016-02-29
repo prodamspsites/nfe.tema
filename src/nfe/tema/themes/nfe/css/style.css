@@ -229,7 +229,6 @@ nav.menu.empresas{
   background: -webkit-linear-gradient(top,  #ff921b 0%,#ef7d00 100%); /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(to bottom,  #ff921b 0%,#ef7d00 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff921b', endColorstr='#ef7d00',GradientType=0 ); /* IE6-9 */
-  display:none;
   position: relative;
   z-index: 2;
 }
