@@ -25,6 +25,7 @@
         <after css:theme-children="html head" css:content-children="html head" />
         <before css:theme="#content" css:content="#edit-bar" />
         <replace css:theme="#content" css:content="#content" />
+        <replace css:theme=".informativosHome" css:content=".informativosHome" />
 
     </rules>
 

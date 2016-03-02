@@ -158,6 +158,7 @@ header{
   text-decoration: none;
   font-weight: 500;
   font-size: 0.85em;
+  text-transform: uppercase;
 }
 #portal-header .btnReclamacoes{
   float: right;
