@@ -26,6 +26,7 @@
         <before css:theme="#content" css:content="#edit-bar" />
         <before css:theme="#content" css:content="#portal-breadcrumbs" />
         <replace css:theme="#content" css:content="#content" />
+        <replace css:theme=".informativosHome" css:content=".informativosHome" />
 
     </rules>
 
