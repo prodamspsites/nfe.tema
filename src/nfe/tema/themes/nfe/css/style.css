@@ -158,7 +158,6 @@ header{
   text-decoration: none;
   font-weight: 500;
   font-size: 0.85em;
-  text-transform: uppercase;
 }
 #portal-header .btnReclamacoes{
   float: right;
@@ -347,11 +346,37 @@ nav.menu ul li:last-child a{
   background: #f3e0e0;
   min-height: 57px;
 }
+.informativosHome p{
+  color: #333333;
+  font-family: 'Fira Sans';
+  font-size: 0.75em;
+  padding: 15px 0 0 0;
+  float: left;
+  width: 78%;
+}
+.informativosHome .btnImportantPrev{
+  background:url(../img/btnPrevImportant.gif) no-repeat;
+  width: 23px;
+  height: 26px;
+  float: right;
+  text-indent: -9999px;
+  margin: 12px 0 0 0;
+}
+.informativosHome .btnImportantNext{
+  background:url(../img/btnNextImportant.gif) no-repeat;
+  width: 23px;
+  height: 26px;
+  float: right;
+  text-indent: -9999px;
+  margin: 12px 0 0 1px;
+}
 .informativosHome .titImportante{
   color: #b53b3b;
   float: left;
   text-align: center;
   padding: 20px 55px 0 0;
+  font-size: 0.9em;
+  height: 52px;
 }
 .divSlider{
   float: left;
@@ -562,6 +587,52 @@ div.managePortletsLink{
   font-size:1.1em;
   color: #525252;
 }
+/*MENU INTERNAS*/
+.divMenuSecundaria .titulo_principal{
+  color: #ef7d00;
+  font-family: 'Bitter';
+  font-size: 2em;
+}
+#content .menu-segundo-nivel{
+  border-bottom: 1px solid #e0e0e0;
+  float: left;
+  width: 100%;
+  margin: 20px 0 23px 0;
+}
+#content .menu-segundo-nivel ul{
+  width: 90%;
+  margin-left:5%;
+}
+#content .menu-segundo-nivel ul li{
+  background: #eeeeee;
+  display: inline;
+  list-style: none;
+  float: left;
+  margin: 1px 0 0 0;
+  position: relative;
+}
+#content .menu-segundo-nivel ul li.active{
+  background: #fff;
+  color: #525252;
+  border-top: 1px solid #e0e0e0;
+  border-right: 1px solid #e0e0e0;
+  border-left: 1px solid #e0e0e0;
+  border-bottom: 1px solid #fff;
+  margin: -1px 0 0 0;
+  position: relative;
+  top: 1px;
+}
+#content .menu-segundo-nivel ul li a{
+    color: #002e55;
+    padding: 5px 10px 5px 10px;
+    border-bottom: none;
+    float: left;
+    border-right: 1px solid #e0e0e0;
+}
+#content .menu-segundo-nivel ul li:last-child a{
+      border-right: none;
+}
+
 /* INTERNA NOTICIAS*/
 #content #parent-fieldname-title{
   color: #ef7d00;
@@ -728,6 +799,7 @@ div.managePortletsLink{
 #content h1.documentFirstHeading{
   line-height: 1.1em;
   padding: 0 0 10px 0;
+  margin: 10px 0 0 0;
 }
 .bxslider li{
   width: 100%;
@@ -1200,7 +1272,7 @@ body {padding: 0; margin: 0;}
   width: 100%;
   margin: 20px 0 20px 0;
 }
-.divAccordeon h3{
+#content .divAccordeon h3{
   -webkit-border-radius: 8px;
   -moz-border-radius: 8px;
   border-radius: 8px;
@@ -1211,10 +1283,15 @@ body {padding: 0; margin: 0;}
   font-size: 0.9em;
   cursor: pointer;
   margin: 8px 0 0 0;
-  background: url(../img/icoAcc-off.png)  5px 8px no-repeat #eee;
+  background: url(../img/icoAcc-off.png)  7px 10px no-repeat #eee;
 }
 .divAccordeon h3.active{
   background: url(../img/icoAcc-on.png)  5px 8px no-repeat #eee;
+}
+#content .divAccordeon h3 p{
+  color:#002e55;
+  font-family: 'Bitter', Arial;
+  font-size: 1.1em;
 }
 .divAccordeon .textoAccordeon{
   float: left;
@@ -1247,6 +1324,179 @@ body {padding: 0; margin: 0;}
   font-size: 0.9em;
   display: list-item;
   list-style-type: disc;
+}
+/*NOTICIAS*/
+#content .imgHomeNoticias{
+  float:left;
+  margin: 0 30px 0 -20px;
+}
+#content .destaqueNoticias{
+    margin: 15px 0 0 0;
+    padding: 0;
+    display: block;
+}
+.destaqueNoticias time{
+  color:#525252;
+  font-family: 'Fira Sans';
+}
+.destaqueNoticias h2.destaqueTitulo{
+  line-height: 1em;
+  font-size: 1.3em;
+  margin:8px 0 15px 0;
+}
+.destaqueNoticias h2.destaqueTitulo a{
+  color: #002e55;
+  font-family: 'Bitter', Arial;
+}
+#content .destaqueNoticias .btnNotContinuar{
+-webkit-border-bottom-right-radius: 12px;
+    -moz-border-radius-bottomright: 12px;
+    border-bottom-right-radius: 12px;
+    background: #eeeeee;
+    padding: 9px 15px 9px 25px;
+    color: #002e55;
+    text-decoration: none;
+    float: right;
+    font-size: 1em;
+    width: 105px;
+    height: 12px;
+    display: table-cell;
+    position: relative;
+    margin-right: -9px;
+    margin-bottom: -1px;
+    margin: 29px -9px -1px 0;
+    border-bottom: none;
+    position: absolute;
+    bottom: 0;
+    right: 8px;
+    border-bottom: none;
+}
+.destaqueNoticias .btnNotContinuar:before {
+    content: "";
+    position: absolute;
+    right: 100%;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-top: 4px solid transparent;
+    border-right: 8px solid #eee;
+    border-bottom: 0px solid transparent;
+}
+#content .boxGeralNoticias{
+  border: 1px solid #eee;
+    -webkit-border-top-right-radius: 12px;
+    -webkit-border-bottom-right-radius: 12px;
+    -moz-border-radius-topright: 12px;
+    -moz-border-radius-bottomright: 12px;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    list-style: none;
+    width: 714px;
+    float: left;
+    margin: 15px 10px 0 0;
+    padding: 0px 5px 28px 20px;
+    position:relative;
+}
+/*LEGISLAÇÃO*/
+.linkDownloadLeg{
+  border-bottom: 1px solid #eeeeee !important;
+  float:left;
+  clear: both;
+  width:100%;
+  margin: -30px 0 20px 0;
+}
+.btnDownloadLeg{
+    webkit-border-bottom-right-radius: 12px;
+    -moz-border-radius-bottomright: 12px;
+    border-bottom-right-radius: 12px;
+    background: url(../img/icoDonwnloadLeg.png) 16px 15px no-repeat #eee;
+    padding: 16px 15px 9px 43px;
+    color: #002e55;
+    text-decoration: none;
+    float: right;
+    font-size: 1em;
+    width: 75px;
+    height: 21px;
+    display: table-cell;
+    position: relative;
+    margin-right: -9px;
+    margin-bottom: -1px;
+    margin: 29px -9px -1px 0;
+    border-bottom: none;
+    font-size: 0.9em;
+    color: #345877;
+}
+.btnDownloadLeg::before{
+    content: "";
+    position: absolute;
+    right: 100%;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-top: 4px solid transparent;
+    border-right: 8px solid #eee;
+    border-bottom: 0px solid transparent;
+}
+#content .visualIEFloatFix .tileHeadline a{
+  font-family: 'Bitter', Arial;
+  font-size: 0.65em;
+  color: #002e55;
+}
+#filtraConteudo{
+  border-top:1px solid #e0e0e0;
+  border-bottom: 1px solid #e0e0e0;
+  margin: 25px 0 25px 0;
+  float: left;
+  width: 100%;
+  padding: 10px 0 10px 0;
+}
+#filtraConteudo #filtrarLegislacao{
+  background: #e0e0e0;
+  width: 280px;
+  height: 32px;
+  border: none;
+  padding: 0 0 0 10px;
+}
+#filtraConteudo label{
+  font-family: 'Fira Sans', Arial;
+  color: #525252;
+  font-weight: normal;
+  margin:0 20px 0 0;
+  padding: 0 0 0 35px;
+}
+.filtrarLegislacaoButton{
+  font-family: 'Fira Sans', Arial;
+  background: #345877;
+  color: #fff;
+  padding: 8px 22px 5px 22px;
+  border: none;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  margin: 0 0 0 12px;
+}
+.filtrarLegislacao{
+  height: 28px;
+}
+#content .documentFirstHeading{
+  color:#ef7d00;
+  font-family: 'Bitter', Arial;
+  font-size: 1.5em;
+}
+#content .tileItem .sat-iss{
+    float: left;
+    border: 1px solid #ef7d00;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 6px;
+    padding: 2px 5px 0 5px;
+    color: #ef7d00;
+    margin: 6px 0 0 10px;
+    font-size: 0.78em;
+}
+#content .legislacao-titulo .tileHeadline{
+  float:left;
+  clear: both;
 }
 /* ==========================================================================
    Adaptações responsivas
