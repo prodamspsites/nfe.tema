@@ -24,6 +24,7 @@
         <replace css:content="#portal-column-two" css:theme="#portal-column-two" />
         <after css:theme-children="html head" css:content-children="html head" />
         <before css:theme="#content" css:content="#edit-bar" />
+        <before css:theme="#content" css:content="#portal-breadcrumbs" />
         <replace css:theme="#content" css:content="#content" />
 
     </rules>
