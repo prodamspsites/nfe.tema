@@ -372,6 +372,9 @@ nav.menu ul li:last-child a{
   float: left;
   width: 78%;
 }
+.informativosHome .bx-viewport{
+  height: 68px !important;
+}
 .informativosHome .bx-controls-direction .bx-prev{
   background: url(../img/btnPrevImportant.gif) no-repeat;
   width: 23px;
@@ -403,7 +406,7 @@ nav.menu ul li:last-child a{
 }
 .informativosHome .bx-controls-direction{
     float: right;
-    margin: -50px 0 0 0;
+    margin: -59px 0 0 0;
 }
 .informativosHome .bx-viewport{
   width: 78% !important;
@@ -852,7 +855,7 @@ div.managePortletsLink{
   color: #ef7d00;
   font-size: 2em;
   font-family: Bitter;
-  margin: -8px 0 10px 0;
+  margin: 0 0 10px 0;
 }
 #content .subTitNoticias{
   font-family: Bitter;
@@ -865,7 +868,8 @@ div.managePortletsLink{
   color:#525252;
   font-family: 'Fira Sans';
   font-size: 1.1em;
-  padding: 18px 0 0 0;
+  padding: 2px 0 0 0;
+  clear: both;
 }
 #content .noticias_media time{
   float: left;
