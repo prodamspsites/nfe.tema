@@ -138,6 +138,7 @@ header{
 #portal-header ul.globalnav li{
   position:relative;
   z-index: 1;
+  text-transform: uppercase;
 }
 #portal-header ul.globalnav li.cidadao{
   list-style: none;
