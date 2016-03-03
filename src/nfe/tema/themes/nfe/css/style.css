@@ -85,6 +85,22 @@ header{
 .acessibilidade ul li a.icoContraste{
   background:url(../img/icoContraste.png) no-repeat 0 3px;
 }
+#portal-breadcrumbs a{
+  color:#002e55;
+  margin: 0 5px 30px 0;
+}
+#portal-breadcrumbs{
+  font-family: 'Fira Sans';
+  color: #525252;
+  margin: 30px 0 20px 0;
+  float: left;
+}
+#portal-breadcrumbs span{
+  margin:0 3px 0 3px;
+}
+#portal-breadcrumbs .breadcrumbSeparator{
+  margin:0;
+}
 #portal-header #logo h1 a{
   background:url(../img/logoNfe.png) no-repeat;
   float:left;
@@ -432,7 +448,7 @@ nav.menu ul li:last-child a{
 }
 #portal-column-two.fixo{
   position:fixed;
-  margin-left: -30%;
+  margin-left: -31.9%;
   top:0;
 }
 div.managePortletsLink{
@@ -1450,6 +1466,7 @@ body {padding: 0; margin: 0;}
     border-bottom: none;
     font-size: 0.9em;
     color: #345877;
+    cursor: pointer;
 }
 .btnDownloadLeg::before{
     content: "";
@@ -1473,7 +1490,20 @@ body {padding: 0; margin: 0;}
   margin: 25px 0 25px 0;
   float: left;
   width: 100%;
-  padding: 10px 0 10px 0;
+  padding: 0 0 0 0;
+}
+#filtraConteudo .btnLimparFiltro{
+display: inline;
+    margin: 0 0 0 9px;
+    background: url(../img/btnLimparBusca.png) no-repeat 14px 17px;
+    width: 24px;
+    padding: 16px 0 0 40px;
+    color: #525252 !important;
+    border-bottom: none !important;
+    border-left: 1px solid #eee;
+    height: 32px;
+    float: right;
+    width: 90px;
 }
 #filtraConteudo #filtrarLegislacao{
   background: #e0e0e0;
@@ -1481,13 +1511,14 @@ body {padding: 0; margin: 0;}
   height: 32px;
   border: none;
   padding: 0 0 0 10px;
+  margin: 8px 0 0 0;
 }
 #filtraConteudo label{
   font-family: 'Fira Sans', Arial;
   color: #525252;
   font-weight: normal;
   margin:0 20px 0 0;
-  padding: 0 0 0 35px;
+  padding: 10px 0 10px 35px;
 }
 .filtrarLegislacaoButton{
   font-family: 'Fira Sans', Arial;
@@ -1498,7 +1529,8 @@ body {padding: 0; margin: 0;}
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
-  margin: 0 0 0 12px;
+  margin: 10px 0 10px 12px;
+  cursor: pointer;
 }
 .filtrarLegislacao{
   height: 28px;
