@@ -351,24 +351,49 @@ nav.menu ul li:last-child a{
   font-family: 'Fira Sans';
   font-size: 0.75em;
   padding: 15px 0 0 0;
+}
+.bxsliderAlerta li{
   float: left;
   width: 78%;
 }
-.informativosHome .btnImportantPrev{
-  background:url(../img/btnPrevImportant.gif) no-repeat;
+.informativosHome .bx-controls-direction .bx-prev{
+  background: url(../img/btnPrevImportant.gif) no-repeat;
   width: 23px;
   height: 26px;
-  float: right;
+  display: inline-block;
   text-indent: -9999px;
   margin: 12px 0 0 0;
+  position: relative;
+  top: 0;
+  left: 0;
+  float: left;
 }
-.informativosHome .btnImportantNext{
-  background:url(../img/btnNextImportant.gif) no-repeat;
+.informativosHome .bx-controls-direction .bx-next{
+  background: url(../img/btnNextImportant.gif) no-repeat;
   width: 23px;
   height: 26px;
-  float: right;
+  display: inline-block;
   text-indent: -9999px;
-  margin: 12px 0 0 1px;
+  margin: 12px 0 0 3px;
+  position: relative;
+  top: 0;
+  right: 0;
+  float: left;
+}
+.informativosHome .bx-controls-direction .bx-prev.disabled, .informativosHome .bx-controls-direction .bx-next.disabled{
+  display: block;
+  opacity: 0.5;
+  cursor: default;
+}
+.informativosHome .bx-controls-direction{
+    float: right;
+    margin: -50px 0 0 0;
+}
+.informativosHome .bx-viewport{
+  width: 78% !important;
+}
+.informativosHome .bx-controls-direction{
+  display: block;
 }
 .informativosHome .titImportante{
   color: #b53b3b;
