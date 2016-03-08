@@ -191,10 +191,10 @@ header{
 #portal-header .menuResp{
   display: none;
 }
-#nfe-searchbox .hiddenStructure{
+#portal-searchbox .hiddenStructure{
   display:none;
 }
-#nfe-searchbox .searchField{
+#portal-searchbox .searchField{
   -webkit-border-top-left-radius: 8px;
   -webkit-border-bottom-left-radius: 8px;
   -moz-border-radius-topleft: 8px;
@@ -208,7 +208,7 @@ header{
   padding:0px 0 0 12px;
   margin: 0;
 }
-#nfe-searchbox .searchButton{
+#portal-searchbox .searchButton{
   -webkit-border-top-right-radius: 8px;
   -webkit-border-bottom-right-radius: 8px;
   -moz-border-radius-topright: 8px;
