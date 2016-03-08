@@ -1375,7 +1375,7 @@ body {padding: 0; margin: 0;}
   background: url(../img/icoAcc-off.png)  7px 10px no-repeat #eee;
 }
 .divAccordeon h3.active{
-  background: url(../img/icoAcc-on.png)  5px 8px no-repeat #eee;
+  background: url(../img/icoAcc-on.png)  5px 8px no-repeat #eee !important;
 }
 #content .divAccordeon h3 p{
   color:#002e55;
