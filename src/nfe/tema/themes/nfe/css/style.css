@@ -191,10 +191,10 @@ header{
 #portal-header .menuResp{
   display: none;
 }
-#portal-searchbox .hiddenStructure{
+#nfe-searchbox .hiddenStructure{
   display:none;
 }
-#portal-searchbox .searchField{
+#nfe-searchbox .searchField{
   -webkit-border-top-left-radius: 8px;
   -webkit-border-bottom-left-radius: 8px;
   -moz-border-radius-topleft: 8px;
@@ -208,7 +208,7 @@ header{
   padding:0px 0 0 12px;
   margin: 0;
 }
-#portal-searchbox .searchButton{
+#nfe-searchbox .searchButton{
   -webkit-border-top-right-radius: 8px;
   -webkit-border-bottom-right-radius: 8px;
   -moz-border-radius-topright: 8px;
@@ -1486,9 +1486,45 @@ body {padding: 0; margin: 0;}
     padding: 0px 5px 28px 20px;
     position:relative;
 }
+/*BUSCA*/
+#content #search-results-wrapper #search-results dt a{
+  color: #002e54 !important;
+  font-family: 'Bitter';
+  text-decoration: none;
+  border-bottom: none;
+  font-size: 1.25em;
+}
+#content #search-results-wrapper #search-results dd{
+  color:#525252;
+  margin-left: 0;
+}
+#content #search-results-wrapper #search-results dd a{
+  color: #525252;
+  text-decoration: none;
+  border-bottom: none;
+  font-style: normal;
+}
+.searchResults dt{
+  background: none !important;
+  margin: 0 0 0 0;
+}
+.contenttype-news-item{
+  margin-left: -20px !important;
+}
+#search-results-bar{
+  color: #525252 !important;
+  font-size: 1.1em;
+  padding: 0 0 0 15px !important;
+  font-style: italic !important;
+  border-top: none !important;
+  border-bottom: none !important;
+}
+.searchform #search-field{
+  display: none;
+}
 /*LEGISLAÇÃO*/
-.linkDownloadLeg{
-  border-bottom: 1px solid #eeeeee !important;
+#content #search-results-wrapper #search-results .linkDownloadLeg{
+  border-bottom: 1px solid #eeeeee;
   float:left;
   clear: both;
   width:100%;
