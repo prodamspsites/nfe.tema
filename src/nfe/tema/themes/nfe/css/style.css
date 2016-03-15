@@ -1694,7 +1694,7 @@ body {padding: 0; margin: 0;}
   border-bottom: 1px solid #eee;
   margin: 40px 0 15px 0;
 }
-.divAccordeon #content .tileItem{
+#content .divAccordeon .tileItem{
   border-bottom: none !important;
   margin: 0 !important;
 }
