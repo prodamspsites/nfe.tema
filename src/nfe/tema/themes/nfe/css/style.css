@@ -138,6 +138,10 @@ header{
   float: right;
   width: 700px;
 }
+#portal-header .divSection .divReclamacao{
+  margin: -10px 0 0 0;
+}
+#portal-header .divSection
 
 #portal-header ul.globalnav{
   float: right;
@@ -1476,7 +1480,7 @@ body {padding: 0; margin: 0;}
   padding: 10px;
   float: left;
   color: #525252;
-  font-size: 0.9em;
+  font-size: 1.1em;
 }
 .divAccordeon .textoAccordeon ul{
   padding: 10px;
@@ -1490,7 +1494,7 @@ body {padding: 0; margin: 0;}
   clear: both;
   padding: 0 0 15px 0;
   color: #525252;
-  font-size: 0.9em;
+  font-size: 1.1em;
   display: list-item;
   list-style-type: disc;
 }
@@ -1601,6 +1605,10 @@ body {padding: 0; margin: 0;}
   float:left;
   width: 100%;
 }
+.searchResults #content-core dd a{
+  float: none !important;
+  width: auto !important;
+}
 #content-core dd{
   margin:0 0 20px 0 !important;
 }
@@ -1685,6 +1693,10 @@ body {padding: 0; margin: 0;}
 #content .tileItem{
   border-bottom: 1px solid #eee;
   margin: 40px 0 15px 0;
+}
+.divAccordeon #content .tileItem{
+  border-bottom: none !important;
+  margin: 0 !important;
 }
 #content .tileItem p{
   width: 512px;
