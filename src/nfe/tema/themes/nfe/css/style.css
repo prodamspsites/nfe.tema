@@ -88,15 +88,24 @@ header{
 #portal-breadcrumbs a{
   color:#002e55;
   margin: 0 5px 30px 0;
+  font-weight: 500;
 }
 #portal-breadcrumbs{
   font-family: 'Fira Sans';
   color: #525252;
-  margin: 30px 0 20px 0;
+  margin: 30px 0 20px 0.35em !important;
   float: left;
 }
+.contentBread{
+  float: left;
+  line-height: 0;
+  margin-bottom: 20px;
+}
 #portal-breadcrumbs span{
-  margin:0 3px 0 3px;
+  margin:0;
+}
+#portal-breadcrumbs span#breadcrumbs-current{
+  line-height: 0;
 }
 #portal-breadcrumbs .breadcrumbSeparator{
   margin:0;
@@ -106,7 +115,7 @@ header{
   float:left;
   width:99px;
   height:102px;
-  margin:25px 0 0 0;
+  margin:35px 0 0 0;
 }
 #portal-header .logo #portal-logo img, .searchSection{
   display:none;
@@ -154,6 +163,7 @@ header{
   padding: 15px 25px 10px 25px;
   text-align: center;
   margin: 0 4px 0 0;
+  float: left;
 }
 #portal-header ul.globalnav li.empresas{
   background: #ff921b;
@@ -169,6 +179,7 @@ header{
   padding: 15px 25px 10px 25px;
   text-align: center;
   margin: 0 4px 0 0;
+  float: left;
 }
 #portal-header ul.globalnav li a{
   color:#002e55;
@@ -195,26 +206,29 @@ header{
   display:none;
 }
 #portal-searchbox .searchField{
-  -webkit-border-top-left-radius: 8px;
-  -webkit-border-bottom-left-radius: 8px;
-  -moz-border-radius-topleft: 8px;
-  -moz-border-radius-bottomleft: 8px;
-  border-top-left-radius: 8px;
-  border-bottom-left-radius: 8px;
+  -webkit-border-top-left-radius: 6px;
+  -webkit-border-bottom-left-radius: 6px;
+  -moz-border-radius-topleft: 6px;
+  -moz-border-radius-bottomleft: 6px;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
   width: 265px;
   height: 32px;
   border:none;
   color:#545454;
   padding:0px 0 0 12px;
   margin: 0;
+webkit-box-shadow: 3px 1px 11px -1px rgba(112,112,112,0.19);
+-moz-box-shadow: 3px 1px 11px -1px rgba(112,112,112,0.19);
+box-shadow: 3px 1px 11px -1px rgba(112,112,112,0.19);
 }
 #portal-searchbox .searchButton{
-  -webkit-border-top-right-radius: 8px;
-  -webkit-border-bottom-right-radius: 8px;
-  -moz-border-radius-topright: 8px;
-  -moz-border-radius-bottomright: 8px;
-  border-top-right-radius: 8px;
-  border-bottom-right-radius: 8px;
+  -webkit-border-top-right-radius: 6px;
+  -webkit-border-bottom-right-radius: 6px;
+  -moz-border-radius-topright: 6px;
+  -moz-border-radius-bottomright: 6px;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
   background: #345877;
   color: #fff;
   text-align: center;
@@ -222,6 +236,9 @@ header{
   height: 32px;
   width: 75px;
   cursor: pointer;
+webkit-box-shadow: 3px 1px 11px -1px rgba(112,112,112,0.19);
+-moz-box-shadow: 3px 1px 11px -1px rgba(112,112,112,0.19);
+box-shadow: 3px 1px 11px -1px rgba(112,112,112,0.19);
 }
 nav.menu.cidadao{
   float:left;
@@ -254,12 +271,23 @@ nav.menu.empresas ul li a{
 }
 nav.menu.empresas ul li.submenu:hover{
   background: #fac575;
+  webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+-webkit-box-shadow: inset 0px 0px 2px 3px rgba(0,0,0,0.09);
+-moz-box-shadow: inset 0px 0px 2px 3px rgba(0,0,0,0.09);
+box-shadow: inset 0px 0px 2px 3px rgba(0,0,0,0.09);
 }
 nav.menu.cidadao ul li.submenu:hover{
   background:#ffe698;
+  webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+-webkit-box-shadow: inset 0px 0px 2px 3px rgba(0,0,0,0.09);
+-moz-box-shadow: inset 0px 0px 2px 3px rgba(0,0,0,0.09);
+box-shadow: inset 0px 0px 2px 3px rgba(0,0,0,0.09);
 }
 nav.menu.cidadao ul li.submenu ul.menuLista{
-  background:#ffe698;
   position: absolute;
   top: 40px;
   float: left;
@@ -318,10 +346,11 @@ nav.menu ul li.submenu:hover:after{
 }
 nav.menu ul li.submenu ul.menuLista{
   display: block;
-  -webkit-box-shadow: 0px 6px 20px -2px rgba(0,0,0,0.21);
-  -moz-box-shadow: 0px 6px 20px -2px rgba(0,0,0,0.21);
-  box-shadow: 0px 6px 20px -2px rgba(0,0,0,0.21);
+-webkit-box-shadow: 0px 0px 8px -1px rgba(0,0,0,0.39);
+-moz-box-shadow: 0px 0px 8px -1px rgba(0,0,0,0.39);
+box-shadow: 0px 0px 8px -1px rgba(0,0,0,0.39);
   min-width: 230px;
+  background: #fff;
 }
 nav.menu ul li.submenu ul.menuLista li{
   display: block;
@@ -329,6 +358,10 @@ nav.menu ul li.submenu ul.menuLista li{
   border-bottom: 1px solid #fff;
   float: left;
   width: 100%;
+border-radius: 4px 4px 4px 4px;
+-moz-border-radius: 4px 4px 4px 4px;
+-webkit-border-radius: 4px 4px 4px 4px;
+background:#ffe698;
 }
 nav.menu ul li.submenu ul.menuLista li:first-child{
   border-top:1px solid #fff;
@@ -351,8 +384,8 @@ nav.menu ul li a{
   font-size: 0.9em;
   border-right:1px solid #fcc833;
   padding: 0 15px 0 0;
-  margin: 0 0 0 15px;
-  height: 15px;
+  margin: -3px 0 0 15px;
+  height: 18px;
   float: left;
 }
 nav.menu ul li:last-child a{
@@ -444,7 +477,10 @@ nav.menu ul li:last-child a{
 }
 #portal-column-content{
   float:left;
-  width:710px;
+  width:670px;
+}
+#portal-column-content.fixo{
+  padding: 0 0 0 4px;
 }
 #portal-column-two{
   float:left;
@@ -453,8 +489,8 @@ nav.menu ul li:last-child a{
 }
 #portal-column-two.fixo{
   position:fixed;
-  margin-left: -31.9%;
-  top:0;
+  margin-left: -34.1%;
+  top: -4px;
 }
 div.managePortletsLink{
   background: none !important;
@@ -479,7 +515,6 @@ div.managePortletsLink{
   font-size:1.1em;
   color: #525252;
   font-family: fira sans;
-  font-weight: 400;
 }
 #portal-column-two .divSideBarAcesso .acessoSistema{
   margin: 0;
@@ -545,12 +580,13 @@ div.managePortletsLink{
   height: 22px;
   padding: 5px 0 4px 60px;
   font-size: 0.8em;
-  margin: 10px 0 10px 0;
+  margin: 10px 0 15px 0;
   text-decoration: none;
   float: left;
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
   border-radius: 6px;
+  font-variant-ligatures:none;
 }
 #portal-column-two .divSideBarAcessoBottom{
   background: #e0e0e0;
@@ -622,7 +658,7 @@ div.managePortletsLink{
   float: left;
   clear: both;
   margin: 20px 0 20px 0;
-  padding: 22px 0 0 32px;
+  padding: 22px 0 18px 32px;
   width: 299px;
 }
 #portal-column-two .divSideBarPlacar h2{
@@ -632,6 +668,7 @@ div.managePortletsLink{
   margin: 0 0 0 0;
   font-size:1.1em;
   color: #525252;
+  font-weight: 500;
 }
 /*MENU INTERNAS*/
 .divMenuSecundaria .titulo_principal{
@@ -674,6 +711,7 @@ div.managePortletsLink{
     border-bottom: none;
     float: left;
     border-right: 1px solid #e0e0e0;
+    font-weight: 600;
 }
 #content .menu-segundo-nivel ul li:last-child a{
       border-right: none;
@@ -689,6 +727,7 @@ div.managePortletsLink{
 #content-core p{
   color:#525252;
   font-family: 'Fira Sans',Arial;
+  font-size: 1.1em;
 }
 #content .documentDescription, #content #description{
   float:left;
@@ -718,17 +757,19 @@ div.managePortletsLink{
   font-weight: 600;
   font-size: 1.01em;
   margin: 20px 0 20px 0;
+  letter-spacing: 0;
 }
 .divDestaquesHome ul.destaquesHome li .imgDestaques{
   float: left;
   position: relative;
   z-index: 2;
-  margin-top: -15px;
+  margin-top: -6px;
+  width: 100px;
 }
 .divDestaquesHome ul.destaquesHome li .txtDestaque{
-  -webkit-border-top-right-radius: 12px;
-  -moz-border-radius-topright: 12px;
-  border-top-right-radius: 12px;
+  border-radius: 0px 10px 10px 0px;
+  -moz-border-radius: 0px 10px 10px 0px;
+  -webkit-border-radius: 0px 10px 10px 0px;
   background: #eee;
   float: left;
   margin: 0 0 0 -25px;
@@ -736,7 +777,7 @@ div.managePortletsLink{
   z-index: 1;
   width: 210px;
   padding: 0 0 0 38px;
-  min-height: 110px;
+  min-height: 120px;
 }
 .divDestaquesHome ul.destaquesHome li .txtDestaque p a{
   color:#002e55 !important;
@@ -750,7 +791,7 @@ div.managePortletsLink{
   float: left;
   width: 100%;
   font-family: 'Bitter', Arial;
-  margin: 10px 0 10px 3px;
+  margin: 10px 0 0px 3px;
   font-weight: 600;
   font-size: 2em;
   letter-spacing: 0;
@@ -766,6 +807,7 @@ div.managePortletsLink{
   float:left;
   margin-bottom: 20px;
   padding:0;
+  width: 696px;
 }
 .cover-collection-tile .collection-item{
   border:1px solid #eee;
@@ -791,6 +833,8 @@ div.managePortletsLink{
   margin: 8px 0 15px 0;
   font-size: 1.17em;
   line-height: 1.1em;
+  font-family: 'Bitter';
+  font-weight: 600;
 }
 #content .cover-collection-tile .collection-item .btnContinuarLendo{
   -webkit-border-bottom-right-radius: 12px;
@@ -823,7 +867,7 @@ div.managePortletsLink{
 }
 #content .tile-content p .btnVersaoSimp{
   float:left;
-  width: 98%;
+  width: 674px;
   padding:8px 0 8px 0;
   font-weight: 500;
   font-size: 1.1em;
@@ -831,13 +875,16 @@ div.managePortletsLink{
   color:#002e55 !important;
   background: #eee;
   text-decoration: none;
-  margin: 15px 0 15px 0;
+  margin: 15px 0 25px 0;
 }
 #content .bxslider{
   margin-left:0;
 }
 #content .bxslider2{
   margin-left:0;
+}
+.cover-chamada-tile{
+  margin: -25px 0 0 0;
 }
 #content .bxslider2 li img{
   margin-left: 1px;
@@ -864,13 +911,12 @@ div.managePortletsLink{
   color: #525252;
   font-size: 1.40em;
   margin: 30px 0 10px 0;
-  line-height: 0.1em;
 }
 #content .contentBody{
   color:#525252;
   font-family: 'Fira Sans';
   font-size: 1.1em;
-  padding: 2px 0 0 0;
+  padding: 2px 0 30px 0;
   clear: both;
 }
 #content .noticias_media time{
@@ -878,7 +924,27 @@ div.managePortletsLink{
   margin: 15px 0 0 0;
   color: #525252;
   font-style: italic;
-
+}
+#content .divImgNoticia{
+  position: relative;
+}
+#content .divImgNoticia img{
+  width: 100%;
+}
+#content .divImgNoticia .legendaNoticia{
+  position: absolute;
+  bottom: 3px;
+  left: 0;
+  color: #eee;
+  font-style: italic;
+  font-size: 1.1em;
+  padding: 16px 0 5px 2%;
+  float: left;
+  width: 98%;
+  -webkit-box-shadow: inset 0 -44px 26px -23px rgba(0,0,0,0.57);
+  -moz-box-shadow: inset 0 -44px 26px -23px rgba(0,0,0,0.57);
+  box-shadow: inset 0 -44px 26px -23px rgba(0,0,0,0.57);
+  font-weight: 500;
 }
 #content .noticias_media .autor{
   float: left;
@@ -896,8 +962,9 @@ div.managePortletsLink{
 }
 .bxslider li .imgSliderHome{
   float:left;
-  width: 50%;
+  width: 48%;
   margin: 0 0 0 0;
+  border-bottom:1px solid #eee;
 }
 .bxslider li h1{
   width: 100%;
@@ -915,7 +982,11 @@ div.managePortletsLink{
   text-decoration:none;
   border-bottom: none;
   font-family: "Fira Sans", Arial;
-  font-weight: 500;
+  font-weight: 700;
+}
+#content .bxslider li h1 a:hover{
+  color:#002e55 !important;
+  text-decoration: underline;
 }
 .bxslider li p{
   font-size: 1.1em;
@@ -945,8 +1016,15 @@ div.managePortletsLink{
   margin: 29px -9px -1px 0;
   border-bottom: none;
   position: absolute;
-  bottom: 5px;
+  bottom: 1px;
   right: 37px;
+}
+#content .bxslider li .btnContinuar:hover{
+  color: #002e55 !important;
+  text-decoration: underline;
+}
+#content .bxslider li .btnContinuar::first-letter {
+  text-transform: uppercase;
 }
 
 .bxslider li .btnContinuar:before {
@@ -964,7 +1042,7 @@ div.managePortletsLink{
   border-bottom: 1px solid #eee;
   float: left;
   width: 45%;
-  min-height: 278px;
+  min-height: 270px;
 }
 
 #footer{
@@ -982,7 +1060,7 @@ div.managePortletsLink{
 }
 #footer .textoFooter{
   float:left;
-  width: 315px;
+  width: 365px;
   color: #555555;
   font-size: 0.9em;
   margin: 0 0 0 70px;
@@ -1049,7 +1127,7 @@ body {padding: 0; margin: 0;}
 
 .bx-wrapper {
   position: relative;
-  margin: 0 auto 60px;
+  margin: 0 auto 0;
   padding: 0;
   *zoom: 1;
 }
@@ -1058,7 +1136,7 @@ body {padding: 0; margin: 0;}
   /*max-width: 100%;*/
   display: block;
   float: left;
-  width: 100%
+  width: 100%;
 }
 
 /** THEME
@@ -1251,10 +1329,10 @@ body {padding: 0; margin: 0;}
   float: left;
 }
 .divSlider .bx-wrapper .bx-controls .bx-pager{
-  border-bottom:1px solid #eee;
-  padding: 8px 0 17px 0;
-  margin:12px 0 35px 0;
-  width: 96%;
+    border-bottom: 1px solid #eee;
+    padding: 5px 0 11px 0;
+    margin: 0 0 35px 0;
+    width: 96%;
 }
 .divSlider .bx-wrapper .bx-pager.bx-default-pager a.active{
   background: #ef7d00;
@@ -1308,11 +1386,11 @@ body {padding: 0; margin: 0;}
   color: #ef7d00;
   font-size: 1.4em;
   margin: 0;
-  font-weight: 100;
+  font-weight: 700;
 }
 .divSlider2 .bx-wrapper li .txtSlider2 p{
     color: #525252;
-    font-size: 1em;
+    font-size: 1.1em;
     padding: 10px 0 0 0;
 }
 .divSlider2 .bx-wrapper li .txtSlider2 p a{
@@ -1336,12 +1414,12 @@ body {padding: 0; margin: 0;}
 .divSlider2 .bx-wrapper .bx-pager .bx-pager-item{
   float: left;
 }
-.divSlider2 .bx-wrapper .bx-pager.bx-default-pager a{
+#content .divSlider2 .bx-wrapper .bx-pager.bx-default-pager a{
   background: #345877;
   border: none;
   text-decoration: none;
   font-weight: bold;
-  color: #fff;
+  color: #f5f5f5;
   font-size: 1.3em;
   padding: 4px;
 }
@@ -1350,7 +1428,7 @@ body {padding: 0; margin: 0;}
 }
 #content .divSlider2 .bx-wrapper .bx-pager.bx-default-pager a.active{
   color:#ef7d00;
-  background: #fff;
+  background: #eee;
 }
 .acessoMobile{
   display:none;
@@ -1366,13 +1444,13 @@ body {padding: 0; margin: 0;}
   -moz-border-radius: 8px;
   border-radius: 8px;
   color:#002e55;
-  padding: 8px 0 5px 4%;
+  padding: 8px 0 5px 34px;
   float: left;
   width: 96%;
   font-size: 0.9em;
   cursor: pointer;
   margin: 8px 0 0 0;
-  background: url(../img/icoAcc-off.png)  7px 10px no-repeat #eee;
+  background: url(../img/icoAcc-off.png)  15px 14px no-repeat #eee;
 }
 .divAccordeon h3.active{
   background: url(../img/icoAcc-on.png)  5px 8px no-repeat #eee !important;
@@ -1381,6 +1459,7 @@ body {padding: 0; margin: 0;}
   color:#002e55;
   font-family: 'Bitter', Arial;
   font-size: 1.1em;
+  padding: 4px 0 0 0;
 }
 .divAccordeon .textoAccordeon{
   float: left;
@@ -1437,12 +1516,16 @@ body {padding: 0; margin: 0;}
   color: #002e55;
   font-family: 'Bitter', Arial;
 }
+.destaqueNoticias h2.destaqueTitulo a:hover{
+  color: #002e55 !important;
+  text-decoration: underline;
+}
 #content .destaqueNoticias .btnNotContinuar{
 -webkit-border-bottom-right-radius: 12px;
     -moz-border-radius-bottomright: 12px;
     border-bottom-right-radius: 12px;
     background: #eeeeee;
-    padding: 9px 15px 9px 25px;
+    padding: 9px 15px 13px 25px;
     color: #002e55;
     text-decoration: none;
     float: right;
@@ -1508,19 +1591,33 @@ body {padding: 0; margin: 0;}
   background: none !important;
   margin: 0 0 0 0;
 }
+.searchResults dt a{
+  border-bottom: none !important;
+}
+#content-core dd a{
+  border-bottom: none !important;
+  padding: 2px 0 20px 0;
+  float:left;
+  width: 100%;
+}
+#content-core dd{
+  margin:0 0 20px 0 !important;
+}
 .contenttype-news-item{
   margin-left: -20px !important;
 }
 #search-results-bar{
   color: #525252 !important;
   font-size: 1.1em;
-  padding: 0 0 0 15px !important;
-  font-style: italic !important;
+  padding: 0 0 18px 0 !important;
   border-top: none !important;
   border-bottom: none !important;
 }
 .searchform #search-field{
   display: none;
+}
+.buscTermo p{
+  font-style: italic !important;
 }
 /*LEGISLAÇÃO*/
 #content #search-results-wrapper #search-results .linkDownloadLeg{
@@ -1534,7 +1631,7 @@ body {padding: 0; margin: 0;}
     webkit-border-bottom-right-radius: 12px;
     -moz-border-radius-bottomright: 12px;
     border-bottom-right-radius: 12px;
-    background: url(../img/icoDonwnloadLeg.png) 16px 15px no-repeat #eee;
+    background: url(../img/iconeDownload.png) 15px 11px no-repeat #eee;
     padding: 16px 15px 9px 43px;
     color: #002e55;
     text-decoration: none;
@@ -1546,7 +1643,7 @@ body {padding: 0; margin: 0;}
     position: relative;
     margin-right: -9px;
     margin-bottom: -1px;
-    margin: 29px -9px -1px 0;
+    margin: -39px -9px -1px 0;
     border-bottom: none;
     font-size: 0.9em;
     color: #345877;
@@ -1563,10 +1660,18 @@ body {padding: 0; margin: 0;}
     border-right: 8px solid #eee;
     border-bottom: 0px solid transparent;
 }
+#content .visualIEFloatFix .tileHeadline {
+  width: 552px;
+  float: left;
+}
 #content .visualIEFloatFix .tileHeadline a{
-  font-family: 'Bitter', Arial;
-  font-size: 0.65em;
-  color: #002e55;
+    font-family: 'Bitter', Arial;
+    font-size: 0.65em;
+    color: #002e55;
+    letter-spacing: 0;
+    line-height: 1.1em;
+    padding: 0 0 15px 0;
+    float: left;
 }
 #filtraConteudo{
   border-top:1px solid #e0e0e0;
@@ -1575,6 +1680,13 @@ body {padding: 0; margin: 0;}
   float: left;
   width: 100%;
   padding: 0 0 0 0;
+}
+#content .tileItem{
+  border-bottom: 1px solid #eee;
+  margin: 40px 0 15px 0;
+}
+#content .tileItem p{
+  width: 512px;
 }
 #filtraConteudo .btnLimparFiltro{
 display: inline;
@@ -1630,10 +1742,16 @@ display: inline;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     border-radius: 6px;
-    padding: 2px 5px 0 5px;
     color: #ef7d00;
-    margin: 6px 0 0 10px;
-    font-size: 0.78em;
+    margin: 0 0 0 5px;
+    height: 19px;
+}
+#content .tileItem .sat-iss span{
+    font-size: 0.50em;
+    font-weight: normal;
+    padding: 0 9px 0 9px;
+    margin: -7px 0 0 0;
+    float: left;
 }
 #content .legislacao-titulo .tileHeadline{
   float:left;
@@ -1894,6 +2012,12 @@ display: inline;
   }
   .bx-wrapper .bx-viewport{
     height: auto !important;
+  }
+  .cover-collection-tile{
+    width: auto;
+  }
+  #content .tile-content p .btnVersaoSimp{
+    width: auto;
   }
 }
 
