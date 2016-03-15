@@ -780,7 +780,7 @@ div.managePortletsLink{
   margin: 0 0 0 -25px;
   position: relative;
   z-index: 1;
-  width: 210px;
+  width: 231px;
   padding: 0 0 0 38px;
   min-height: 120px;
 }
@@ -812,7 +812,7 @@ div.managePortletsLink{
   float:left;
   margin-bottom: 20px;
   padding:0;
-  width: 696px;
+  width: 709px;
 }
 .cover-collection-tile .collection-item{
   border:1px solid #eee;
@@ -823,7 +823,7 @@ div.managePortletsLink{
   border-top-right-radius: 12px;
   border-bottom-right-radius: 12px;
   list-style: none;
-  width: 316px;
+  width: 327px;
   float:left;
   margin: 15px 10px 0 0;
   padding: 5px 5px 5px 10px;
@@ -872,7 +872,7 @@ div.managePortletsLink{
 }
 #content .tile-content p .btnVersaoSimp{
   float:left;
-  width: 674px;
+  width: 710px;
   padding:8px 0 8px 0;
   font-weight: 500;
   font-size: 1.1em;
