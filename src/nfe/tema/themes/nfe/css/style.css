@@ -86,15 +86,15 @@ header{
   background:url(../img/icoContraste.png) no-repeat 0 3px;
 }
 #portal-breadcrumbs a{
-  color:#002e55;
-  margin: 0 5px 30px 0;
-  font-weight: 500;
+  color: #002e55;
+   margin: 0 5px 20px 0;
+   font-weight: 500;
 }
 #portal-breadcrumbs{
-  font-family: 'Fira Sans';
-  color: #525252;
-  margin: 30px 0 20px 0.35em !important;
-  float: left;
+font-family: 'Fira Sans';
+   color: #525252;
+   margin: 30px 0 5px 0.35em !important;
+   float: left;
 }
 .contentBread{
   float: left;
@@ -565,6 +565,9 @@ div.managePortletsLink{
   border:none;
   margin:5px 0 0 0;
 }
+#portal-column-two .divSideBarAcesso .acessoSistema .inputAcesso.erro{
+  border:1px solid red;
+}
 #portal-column-two .divSideBarAcesso .acessoSistema .btnEntrar{
   background: #002e55;
   color: #fff;
@@ -764,6 +767,10 @@ div.managePortletsLink{
   margin: 20px 0 20px 0;
   letter-spacing: 0;
 }
+#content .divDestaquesHome ul.destaquesHome li h2 a:hover{
+    color:#ef7d00 !important;
+    text-decoration: underline !important;
+}
 .divDestaquesHome ul.destaquesHome li .imgDestaques{
   float: left;
   position: relative;
@@ -791,6 +798,10 @@ div.managePortletsLink{
   float: left;
   border-bottom: none !important;
 }
+#content .divDestaquesHome ul.destaquesHome li .txtDestaque p a:hover{
+    color:#002e55 !important;
+    text-decoration: underline !important;
+}
 .cover-collection-tile .tile-header h2{
   color:#ef7d00;
   float: left;
@@ -812,7 +823,7 @@ div.managePortletsLink{
   float:left;
   margin-bottom: 20px;
   padding:0;
-  width: 709px;
+  width: 722px;
 }
 .cover-collection-tile .collection-item{
   border:1px solid #eee;
@@ -823,7 +834,7 @@ div.managePortletsLink{
   border-top-right-radius: 12px;
   border-bottom-right-radius: 12px;
   list-style: none;
-  width: 327px;
+  width: 334px;
   float:left;
   margin: 15px 10px 0 0;
   padding: 5px 5px 5px 10px;
@@ -840,6 +851,10 @@ div.managePortletsLink{
   line-height: 1.1em;
   font-family: 'Bitter';
   font-weight: 600;
+}
+#content .cover-collection-tile .collection-item h3 a:hover{
+    color:#002e55 !important;
+    text-decoration: underline !important;
 }
 #content .cover-collection-tile .collection-item .btnContinuarLendo{
   -webkit-border-bottom-right-radius: 12px;
@@ -895,9 +910,9 @@ div.managePortletsLink{
   margin-left: 1px;
 }
 #content h1.documentFirstHeading{
-  line-height: 1.1em;
-  padding: 0 0 10px 0;
+  padding: 0 0 15px 0;
   margin: 10px 0 0 0;
+  font-size: 2em;
 }
 #content h3.titLinhaFinaNot{
   font-style: italic;
@@ -1439,10 +1454,10 @@ body {padding: 0; margin: 0;}
   display:none;
 }
 .divAccordeon{
-  float:left;
+  float: left;
   clear: both;
   width: 100%;
-  margin: 20px 0 20px 0;
+  margin: 0px 0 20px 0;
 }
 #content .divAccordeon h3{
   -webkit-border-radius: 8px;
@@ -1683,12 +1698,15 @@ body {padding: 0; margin: 0;}
     float: left;
 }
 #filtraConteudo{
-  border-top:1px solid #e0e0e0;
+  border-top: 1px solid #e0e0e0;
   border-bottom: 1px solid #e0e0e0;
-  margin: 25px 0 25px 0;
+  margin: 25px 0 0px 0;
   float: left;
   width: 100%;
   padding: 0 0 0 0;
+}
+#filtraConteudo.legislacao{
+  margin-top: -10px;
 }
 #content .tileItem{
   border-bottom: 1px solid #eee;
@@ -1766,6 +1784,11 @@ display: inline;
     margin: -7px 0 0 0;
     float: left;
 }
+.legislacao-titulo{
+  margin:25px 0 0 0;
+  float: left;
+  width: 100%;
+}
 #content .legislacao-titulo .tileHeadline{
   float:left;
   clear: both;
@@ -1778,6 +1801,9 @@ display: inline;
 @media only screen and (max-width : 768px) {
   #portal-column-content{
     width: 100%;
+  }
+  #portal-column-two.fixo{
+    position: relative;
   }
   #portal-column-two{
     clear: both;
