@@ -1649,6 +1649,20 @@ body {padding: 0; margin: 0;}
    border-radius: 5px;
    margin: 20px 0 0 0;
 }
+#viewlet-below-content-title p{
+  color: #525252;
+}
+#content .formDuvidas div.field.error{
+  background-color: transparent;
+  border: none;
+  padding: 0;
+}
+.fieldErrorBox{
+  display: none;
+}
+#content .formDuvidas div.field.error input{
+  border: 1px solid red;
+}
 .formQuestion.label{
   color: #525252;
   font-family: 'Fira Sans';
@@ -1681,6 +1695,7 @@ body {padding: 0; margin: 0;}
    margin:0 0 0 10px;
    width: 440px;
    height: 22px;
+  border: 1px solid transparent;
 }
 #content .formDuvidas form input[type=submit]{
   background: #345877;
@@ -1706,6 +1721,7 @@ body {padding: 0; margin: 0;}
    margin:0 0 0 10px;
    width: 440px;
    height: 130px;
+  border: 1px solid transparent;
 }
 #content .formDuvidas form label span.required:after{
   content: "*";
