@@ -33,6 +33,9 @@ h3{
   margin:0 auto;
   width:1100px;
 }
+.highlightedSearchTerm{
+  background-color: transparent !important;
+}
 header{
   background:#eeeeee;
   float:left;
@@ -399,7 +402,7 @@ nav.menu ul li:last-child a{
   width: 100%;
   float: left;
   background: #f3e0e0;
-  min-height: 57px;
+  height: 58px;
 }
 .informativosHome p{
   color: #333333;
@@ -445,7 +448,7 @@ nav.menu ul li:last-child a{
 }
 .informativosHome .bx-controls-direction{
     float: right;
-    margin: -59px 0 0 0;
+    margin: -65px 0 0 0;
 }
 .informativosHome .bx-viewport{
   width: 78% !important;
@@ -1465,7 +1468,7 @@ body {padding: 0; margin: 0;}
   -moz-border-radius: 8px;
   border-radius: 8px;
   color:#002e55;
-  padding: 8px 0 5px 34px;
+  padding: 8px 0 3px 34px;
   float: left;
   width: 96%;
   font-size: 0.9em;
@@ -1473,14 +1476,58 @@ body {padding: 0; margin: 0;}
   margin: 8px 0 0 0;
   background: url(../img/icoAcc-off.png)  15px 14px no-repeat #eee;
 }
+.divAccordeon.find{
+    -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  border: 1px solid #eee;
+  padding: 5px 10px 10px 10px;
+  margin: 3px 0 3px 0;
+  width: 98%;
+}
+.divAccordeon.find h2{
+  color: #525252;
+  font-size: 1.1em;
+  font-weight: normal;
+}
+#content .divAccordeon.find h3{
+  width: 95%;
+}
+#content .searchDuvidas .vcTambem{
+  float: left;
+  clear: both;
+  background: #eee;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  padding: 6px 10px 9px 12px;
+  width: 98%;
+}
+#content .searchDuvidas .vcTambem p{
+  padding: 8px 0 0 0;
+  float: left;
+  width: 100%;
+  color: #525252;
+}
+#content .searchDuvidas .vcTambem .filtrarLegislacao{
+  width: 70%;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  background: #fff;
+  border: none;
+  padding: 4px;
+  margin: 0 0 0 10px;
+  height: 22px;
+}
 .divAccordeon h3.active{
-  background: url(../img/icoAcc-on.png)  5px 8px no-repeat #eee !important;
+  background: url(../img/icoAcc-on.png)  14px 13px no-repeat #eee !important;
 }
 #content .divAccordeon h3 p{
   color:#002e55;
   font-family: 'Bitter', Arial;
-  font-size: 1.1em;
-  padding: 4px 0 0 0;
+  font-size: 1.25em;
+  padding: 5px 0 0 9px;
 }
 .divAccordeon .textoAccordeon{
   float: left;
@@ -1589,6 +1636,80 @@ body {padding: 0; margin: 0;}
     margin: 15px 10px 0 0;
     padding: 0px 5px 28px 20px;
     position:relative;
+}
+/*FORM DUVIDA*/
+#content .formDuvidas{
+  background: #eee;
+  padding: 20px 10px 5px 20px;
+  float: left;
+  clear: both;
+  width: 97%;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+   border-radius: 5px;
+   margin: 20px 0 0 0;
+}
+.formQuestion.label{
+  color: #525252;
+  font-family: 'Fira Sans';
+  padding: 0 0 0 150px;
+  font-weight: normal;
+  margin: -10px 0 12px 0;
+  font-size: 0.9em;
+  display: list-item;
+  list-style: none;
+}
+#content .formDuvidas form {
+  margin-top: 40px;
+}
+#content .formDuvidas form label{
+  font-family: 'Fira Sans';
+  float: left;
+  font-weight: normal;
+  color: #525252;
+  text-align: right;
+  width: 140px;
+  font-size: 1.1em;
+}
+#content .formDuvidas form input[type=text]{
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+   border-radius: 3px;
+   background: #fff;
+   border: none;
+   padding: 4px;
+   margin:0 0 0 10px;
+   width: 440px;
+   height: 22px;
+}
+#content .formDuvidas form input[type=submit]{
+  background: #345877;
+  padding: 5px 21px 5px 21px;
+  float: left;
+  color: #fff;
+  font-style: 0.9em;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  margin: 8px 0 20px 135px;
+    -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+   border-radius: 2px;
+}
+#content .formDuvidas form textarea{
+    -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+   border-radius: 3px;
+   background: #fff;
+   border: none;
+   padding: 4px;
+   margin:0 0 0 10px;
+   width: 440px;
+   height: 130px;
+}
+#content .formDuvidas form label span.required:after{
+  content: "*";
+  color: #525252;
 }
 /*BUSCA*/
 #content #search-results-wrapper #search-results dt a{
