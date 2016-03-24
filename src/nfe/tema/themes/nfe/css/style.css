@@ -308,7 +308,7 @@ nav.menu.cidadao ul li.submenu ul.menuLista li:hover{
 nav.menu.empresas ul li.submenu ul.menuLista{
   background: #fac575;
   position: absolute;
-  bottom: -160px;
+  top:40px;
   float: left;
   z-index: 1;
   width: auto;
