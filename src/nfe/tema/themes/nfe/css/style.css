@@ -760,6 +760,9 @@ div.managePortletsLink{
   list-style: none;
   float: left;
 }
+.divDestaquesHome ul.destaquesHome li:nth-child(odd){
+  clear: both;
+}
 .divDestaquesHome ul.destaquesHome li h2 a{
   color:#ef7d00 !important;
   float: left;
@@ -2204,6 +2207,12 @@ display: inline;
     width:100%;
   }
 }
+@media only screen and (max-width : 1284px) {
+  #portal-column-two.fixo{
+     margin-left: -32.1%;
+  }
+}
+
 
 /*CONTRASTE*/
 body.contraste1, body.contraste1 #footer, body.contraste1 #footer .footerBottom, body.contraste1 .btnVersaoSimp, body.contraste1 #footer .textoFooter{
