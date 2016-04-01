@@ -455,6 +455,8 @@ nav.menu ul li:last-child a{
 }
 .informativosHome .bx-controls-direction{
   display: block;
+  z-index: 1;
+  position: relative;
 }
 .informativosHome .titImportante{
   color: #b53b3b;
