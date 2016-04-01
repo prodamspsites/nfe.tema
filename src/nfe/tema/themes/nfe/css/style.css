@@ -910,6 +910,7 @@ div.managePortletsLink{
 }
 #content .bxslider2{
   margin-left:0;
+  clear: both;
 }
 .cover-chamada-tile{
   margin: -25px 0 0 0;
@@ -1783,6 +1784,9 @@ body {padding: 0; margin: 0;}
 #content-core #search-results-bar dd a{
   float: none;
 }
+#content-core #search-results-bar .contenttype-folder, #content-core #search-results-bar .contenttype-document{
+  padding-left: 0px !important;
+}
 .searchform #search-field{
   display: none;
 }
@@ -1864,6 +1868,14 @@ body {padding: 0; margin: 0;}
 }
 #content .tileItem p{
   width: 512px;
+}
+#content .tileItem .data{
+    color: #525252;
+    font-family: 'Fira Sans';
+    float:left;
+    clear: both;
+    width: 100%;
+    margin: -8px 0 20px 0;
 }
 #filtraConteudo .btnLimparFiltro{
 display: inline;
