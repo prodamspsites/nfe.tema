@@ -88,16 +88,24 @@ header{
 .acessibilidade ul li a.icoContraste{
   background:url(../img/icoContraste.png) no-repeat 0 3px;
 }
-#portal-breadcrumbs a{
+#portal-breadcrumbs a,
+#portal-breadcrumbsBusca .buscaPath{
   color: #002e55;
    margin: 0 5px 20px 0;
    font-weight: 500;
 }
-#portal-breadcrumbs{
+#portal-breadcrumbs,
+#portal-breadcrumbsBusca{
 font-family: 'Fira Sans';
    color: #525252;
    margin: 30px 0 5px 0.35em !important;
    float: left;
+}
+#portal-breadcrumbsBusca{
+  width: 720px;
+  margin-left: 0!important;
+  margin-bottom: 30px !important;
+  font-size: 0.9em;
 }
 .contentBread{
   float: left;
@@ -1793,6 +1801,73 @@ body {padding: 0; margin: 0;}
 .buscTermo p{
   font-style: italic !important;
 }
+#search-results-bar .searchResults .resultado{
+  width: 720px;
+  border-bottom: 1px #E7E7E7 solid;
+  margin-top: 15px;
+}
+body.template-busca #portal-breadcrumbs{
+  display: none;
+}
+
+/*PAGINACAO*/
+.divPaginacao{
+  float: left;
+  width: 100%;
+}
+#content .listingBar{
+  margin-top:20px!important;
+  margin:0 auto;
+  padding:0;
+  text-align:center;
+}
+
+#content .listingBar a{
+  display:inline-block !important;
+  padding:7px 13px !important;
+  font-family: 'Roboto';
+  font-size: 1.2em !important;
+  border: none !important;
+  color: #427597;
+  font-weight: bold;
+}
+#content .listingBar span{
+  font-size: 1.4em !important;
+}
+#content .listingBar .current{
+  display:inline-block !important;
+  color:#868686 !important;
+  padding:7px 13px !important;
+  font-size: 1.5em !important;
+    -webkit-border-top-left-radius: 0em;
+    -webkit-border-top-right-radius: 0em;
+    -moz-border-radius-topleft: 0em;
+    -moz-border-radius-topright: 0em;
+    border-top-left-radius: 0em;
+    border-top-right-radius: 0em;
+    color: #555555;
+}
+#content .listingBar .previous a{
+  content:'Anterior';
+  position: relative;
+  padding-left:17px;
+  padding-right:17px;
+  float: left;
+  width: 7px;
+}
+#content .listingBar .previous a{
+    float: left;
+    font-size: 0.8em !important;
+}
+
+#content .listingBar .next a{
+  float: right;
+  font-size: 0.8em !important;
+}
+#content .listingBar a:hover{
+  background: none !important;
+}
+
 /*LEGISLAÇÃO*/
 #content #search-results-wrapper #search-results .linkDownloadLeg{
   border-bottom: 1px solid #eeeeee;
