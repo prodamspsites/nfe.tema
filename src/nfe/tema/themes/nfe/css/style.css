@@ -1816,8 +1816,21 @@ body.template-busca #portal-breadcrumbs{
   width: 100%;
 }
 #content .listingBar{
-  margin: 0;
-  padding: 0;
+  float:left;
+  width:100%;
+  clear:left;
+  margin:50px 0;
+}
+#content .listingBar ul{
+  margin:0;
+  padding:0;
+  text-align:center;
+}
+#content .listingBar ul li{
+    display:inline-block;
+}
+#content .listingBar ul li.current{
+  font-size: 1.2em;
 }
 #content .listingBar .highlightedSearchTerm{
     font-weight: 500;
@@ -1842,7 +1855,7 @@ body.template-busca #portal-breadcrumbs{
 #content .listingBar .current{
   display:inline-block !important;
   color:#868686 !important;
-  padding:7px 13px !important;
+  padding:7px 4px !important;
   font-size: 1.3em !important;
     -webkit-border-top-left-radius: 0em;
     -webkit-border-top-right-radius: 0em;
@@ -1853,20 +1866,13 @@ body.template-busca #portal-breadcrumbs{
     color: #555555;
 }
 #content .listingBar .previous a{
-  content:'Anterior';
-  position: relative;
-  padding-left:17px;
-  padding-right:17px;
-  float: left;
-  width: 7px;
-}
-#content .listingBar .previous a{
-    float: left;
     font-size: 0.8em !important;
 }
-
+#content .listingBar .next{
+  float: none;
+}
 #content .listingBar .next a{
-  float: right;
+  float: none;
   font-size: 0.8em !important;
 }
 #content .listingBar a:hover{
