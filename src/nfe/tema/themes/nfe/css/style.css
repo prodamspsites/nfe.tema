@@ -2421,6 +2421,25 @@ body.contraste1 #portal-column-two .divSideBarAcesso{
   background: #000;
   border-bottom:none;
 }
+body.contraste1 #content .bxslider li h1 a{
+  color:#fff;
+}
+body.contraste1 .divSlider2 h2, body.contraste1 .divDestaquesHome ul.destaquesHome li h2 a,  body.contraste1 #content .divDestaquesHome ul.destaquesHome li h2 a:hover{
+  color: #fff !important;
+}
+body.contraste1 .divDestaquesHome ul.destaquesHome li .txtDestaque p a{
+  color: #fff !important;
+}
+body.contraste1 .cover-collection-tile .tile-header h2, body.contraste1  .cover-collection-tile .collection-item time, body.contraste1 #content .cover-collection-tile .collection-item h3 a,body.contraste1 #content .cover-collection-tile .collection-item p{
+  color: #fff !important;
+}
+body.contraste1 #content .divDestaquesHome ul.destaquesHome li .txtDestaque p a:hover{
+  color: #fff !important;
+  text-decoration: underline;
+}
+body.contraste1  #content .tile-content p .btnVersaoSimp{
+  color: #fff !important;
+}
 body.contraste1 #portal-column-two .divSideBarAcessoBottom p, body.contraste1 .divSlider2 .bx-wrapper li .txtSlider2 p, body.contraste1 .divSlider2 .bx-wrapper li .txtSlider2 h3, body.contraste1 .divSlider2 .bx-wrapper li .txtSlider2 p a{
   color:#fff;
 }
@@ -2430,6 +2449,9 @@ body.contraste1 #portal-column-two .divSideBarAcesso .acessoSistema .esqueciSenh
 body.contraste1 #portal-column-two .divSideBarAcessoBottom .btnPlay span,body.contraste1  #portal-column-two .divSideBarAcessoBottom .btnApp,body.contraste1  #portal-column-two .divSideBarAcesso h2, body.contraste1 #portal-column-two .divSideBarAcesso .acessoSistema .esqueciSenha li, body.contraste1 #portal-column-two .divSideBarPlacar h2, body.contraste1 #banner_placar span{
   color:#fff;
 }
+body.contraste1 nav.menu ul li.submenu:hover{
+  background: transparent;
+}
 body.contraste1 #portal-column-two .divSideBarAcesso .acessoSistema .btnEntrar{
   background: #000;
   border: 1px solid #fff;
@@ -2437,6 +2459,9 @@ body.contraste1 #portal-column-two .divSideBarAcesso .acessoSistema .btnEntrar{
 body.contraste1 #portal-column-two .divSideBarAcesso .btnAcessoCertificado{
   background:url(../img/icoCadeado.png) no-repeat 22px 8px;
   border: 1px solid #fff;
+}
+body.contraste1 .informativosHome p{
+  color: #fff;
 }
 body.contraste1 .divDestaquesHome ul.destaquesHome li .txtDestaque,body.contraste1  .divSlider2 .bx-wrapper .bx-pager{
   background: none;
