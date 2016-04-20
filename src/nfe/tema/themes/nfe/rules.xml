@@ -8,6 +8,28 @@
 
         <theme href="theme.html" />
 
+        <!--<replace css:theme="#portal-header" css:content="#portal-top" />-->
+        <copy attributes="class" css:theme="body" css:content="body" />
+        <replace css:theme="#footer" css:content="#footer" />
+        <replace css:theme="#logo" css:content="#logo" />
+        <replace css:theme=".divMenu" css:content=".divMenu" />
+        <replace css:theme=".menuSite" css:content=".menuSite" />
+        <copy css:content="#portal-searchbox" css:theme=".divBusca" />
+        <replace css:theme=".logoFinancas" css:content=".logoFinancas" />
+        <replace css:theme-children=".divReclamacao" css:content-children="#button-reclamacoes" />
+        <replace css:theme-children=".acessoMobile" css:content="#acesso-mobile" />
+
+        <copy attributes="class" css:theme="#portal-column-content" css:content="#portal-column-content" />
+        <replace css:content="#portal-column-one" css:theme="#portal-column-one" />
+        <replace css:content="#portal-column-two" css:theme="#portal-column-two" />
+        <after css:theme-children="html head" css:content-children="html head" />
+        <replace css:theme="#portal-breadcrumbs p span" css:content-children="#portal-breadcrumbs" />
+        <before css:theme="#portal-breadcrumbs" css:content="#edit-bar" />
+        <drop css:content="#portal-breadcrumbs" css:if-content="body.portaltype-collective-cover-content" />
+        <drop css:theme="#portal-breadcrumbs" css:if-content="body.portaltype-collective-cover-content" />
+        <replace css:theme="#content" css:content="#content" />
+        <replace css:theme=".informativosHome" css:content=".informativosHome" />
+
     </rules>
 
 </rules>
