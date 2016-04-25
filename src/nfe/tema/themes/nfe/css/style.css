@@ -46,6 +46,10 @@ header{
   float:left;
   clear: both;
 }
+#edit-bar{
+  z-index: 5;
+  position: relative;
+}
 .acessibilidade{
   width:220px;
   float:right;
@@ -456,7 +460,7 @@ nav.menu ul li:last-child a{
 }
 .informativosHome .bx-controls-direction{
     float: right;
-    margin: -65px 0 0 0;
+    margin: -1px 0 0 0;
 }
 .informativosHome .bx-viewport{
   width: 78% !important;
@@ -470,7 +474,7 @@ nav.menu ul li:last-child a{
   color: #b53b3b;
   float: left;
   text-align: center;
-  padding: 20px 55px 0 0;
+  padding: 20px 19px 0 0;
   font-size: 0.9em;
   height: 52px;
 }
@@ -1113,7 +1117,7 @@ div.managePortletsLink{
 }
 #footer .footerBottom p.copyright{
   float: left;
-  width: 80%;
+  width: 74%;
   color:#999999;
   margin:20px 0 0 0;
   font-size: 0.8em;
@@ -1131,6 +1135,13 @@ div.managePortletsLink{
   font-size: 0.7em;
   margin: 15px 0 0 0;
   float: left;
+}
+#footer .footerBottom .grx{
+  float: left;
+  background: url(../img/logoGrx.png) no-repeat;
+  width: 62px;
+  height: 45px;
+  margin-top: 5px;
 }
 #footer .footerBottom .divProdam .logoProdam a{
   background:url(../img/logoProdam.png) no-repeat;
@@ -1188,6 +1199,8 @@ body {padding: 0; margin: 0;}
     -ms-transform: translatez(0);
     -o-transform: translatez(0);
     transform: translatez(0);
+    float: left;
+    clear: none;
 }
 
 .bx-wrapper .bx-pager,
@@ -1251,6 +1264,9 @@ body {padding: 0; margin: 0;}
 .bx-wrapper .bx-prev {
   left: 18px;
   background: url(../img/btnSliderRight.png) no-repeat center;
+}
+.divSlider .bx-wrapper .bx-prev {
+  left: -13px;
 }
 
 .bx-wrapper .bx-next {
@@ -2042,7 +2058,7 @@ display: inline;
    ========================================================================== */
 
 /* Small Devices, Tablets */
-@media only screen and (max-width : 768px) {
+@media only screen and (max-width : 1000px) {
   #portal-column-content{
     width: 100%;
   }
@@ -2228,8 +2244,27 @@ display: inline;
     width: 100%;
   }
   .bx-wrapper{
-    width: 100%;
-    float: left;
+    width: calc(100% - 35px);
+    float: none;
+  }
+  .informativosHome .bx-controls{
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  .informativosHome{
+    height: auto;
+    position: relative;
+  }
+  .informativosHome .bx-viewport{
+    width: 70% !important;
+  }
+  .informativosHome .titImportante{
+    width: 97px;
+    padding: 20px 10px 0 0;
+  }
+  .informativosHome .bx-controls-direction{
+    margin:3px 0 0 0;
   }
   .divDestaquesHome ul.destaquesHome li{
     clear: both;
@@ -2302,12 +2337,59 @@ display: inline;
   #content .tile-content p .btnVersaoSimp{
     width: auto;
   }
+  .divSlider2 .bx-wrapper .bx-controls-direction a{
+    top: 33%;
+  }
+  .divSlider2 .bx-wrapper .bx-prev{
+    left: 2px;
+  }
+  #footer .footerBottom .grx{
+    display: none;
+  }
 }
 
 /* Medium Devices, Desktops */
+@media only screen and (max-width : 1026px) {
+  .wrap{
+    width:100%;
+  }
+  #portal-column-two .divSideBarAcesso .acessoSistema .inputAcesso{
+    width: 163px;
+  }
+  #portal-column-two .divSideBarAcesso .btnAcessoCertificado{
+    padding:5px 0 4px 46px;
+    width: 179px;
+  }
+  #portal-column-two .divSideBarAcesso{
+    width: 256px;
+  }
+  #portal-column-two .divSideBarAcessoBottom{
+    width: 288px;
+  }
+  #portal-column-two .divSideBarAcessoBottom .btnPlay{
+    margin:12px 0 0 10px;
+    width: 130px;
+  }
+  #portal-column-two .divSideBarAcessoBottom .btnPlay span{
+    padding:5px 9px 0 40px;
+  }
+  #portal-column-two .divSideBarAcessoBottom .btnApp{
+    margin:12px 0 0 10px;
+    width: 120px;
+  }
+  #portal-column-two .divSideBarAcessoBottom .btnApp span{
+    padding:5px 9px 0 40px;
+  }
+  #portal-column-two.fixo{
+    margin-left: -26.1% !important;
+  }
+}
 @media only screen and (max-width : 992px) {
   .wrap{
     width:100%;
+  }
+  #portal-column-two.fixo{
+    margin-left: -100% !important;
   }
 }
 @media only screen and (max-width : 1284px) {
@@ -2315,7 +2397,11 @@ display: inline;
      margin-left: -32.1%;
   }
 }
-
+@media only screen and (max-width : 500px) {
+.informativosHome .bx-viewport{
+    width: 60% !important;
+  }
+}
 
 /*CONTRASTE*/
 body.contraste1, body.contraste1 #footer, body.contraste1 #footer .footerBottom, body.contraste1 .btnVersaoSimp, body.contraste1 #footer .textoFooter{
