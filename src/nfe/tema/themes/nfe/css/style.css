@@ -314,6 +314,10 @@ nav.menu.cidadao ul li.submenu ul.menuLista{
   width: auto;
   display: none;
 }
+nav.menu.cidadao ul li ul.menuLista,
+nav.menu.empresa ul li ul.menuLista {
+  display: none;
+}
 nav.menu.cidadao ul li.submenu ul.menuLista li:hover{
   background: #fcc833;
 }
