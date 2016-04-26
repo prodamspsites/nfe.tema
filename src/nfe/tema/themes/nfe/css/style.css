@@ -1970,6 +1970,7 @@ body.template-busca #portal-breadcrumbs{
 }
 #content .tileItem p{
   width: 512px;
+  display: inline-flex;
 }
 #content .tileItem .data{
     color: #525252;
@@ -2058,7 +2059,7 @@ display: inline;
    ========================================================================== */
 
 /* Small Devices, Tablets */
-@media only screen and (max-width : 1000px) {
+@media only screen and (max-width : 1024px) {
   #portal-column-content{
     width: 100%;
   }
@@ -2078,8 +2079,20 @@ display: inline;
   .bxslider li .contSliderHome{
     clear: both;
   }
+  #content .boxGeralNoticias{
+    width: 100%;
+  }
   .placarMobile{
     display:none;
+  }
+  #portal-column-content{
+    width: 90%;
+  }
+  #content .divAccordeon h3{
+    width: 98%;
+  }
+  #search-results-bar .searchResults .resultado{
+    width: 100%;
   }
   .acessoMobile{
     display:block;
@@ -2115,19 +2128,19 @@ display: inline;
     color: #fff;
   }
   #portal-header .divBusca input::-webkit-input-placeholder {
-     color: #fff;
+     color: #7590a7;
   }
 
   #portal-header .divBusca input:-moz-placeholder {
-     color: #fff;
+     color: #7590a7;
   }
 
   #portal-header .divBusca input::-moz-placeholder {
-     color: #fff;
+     color: #7590a7;
   }
 
   #portal-header .divBusca input:-ms-input-placeholder {
-     color: #fff;
+     color: #7590a7;
   }
   #portal-header .divBusca .searchButton{
     background:url(../img/icoBusca.png) no-repeat 5px 5px #345877;
@@ -2181,6 +2194,9 @@ display: inline;
   .divMenu, .menuSite{
     display: none;
   }
+  .divAccordeon{
+    width: 92%;
+  }
   nav.menu.cidadao ul li.submenu:after, nav.menu.empresas ul li.submenu:after{
     content: "";
     display: inline-block;
@@ -2232,6 +2248,12 @@ display: inline;
   }
   nav.menu ul li.submenu.active{
     padding-bottom: 0;
+  }
+  #content .tileItem p{
+    width: 97%;
+  }
+  #content .visualIEFloatFix .tileHeadline{
+    width: 97%;
   }
   .divSlider{
     float: left;
