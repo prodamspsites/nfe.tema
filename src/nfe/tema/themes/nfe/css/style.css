@@ -47,7 +47,7 @@ header{
   clear: both;
 }
 #edit-bar{
-  z-index: 5;
+  z-index: 1;
   position: relative;
 }
 .acessibilidade{
@@ -334,6 +334,8 @@ nav.menu ul{
   width: 100%;
   margin: 0 0 0 0;
   padding: 0;
+  position: relative;
+  z-index: 9;
 }
 nav.menu ul li{
   list-style: none;
