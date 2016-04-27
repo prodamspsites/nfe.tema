@@ -3,9 +3,8 @@
  * CSS com estilos genéricos para todos os temas
  *
  * @Autores
- *
- * - Victor Brosso Alvares
  * - Moisés de Aguiar Júnior
+ * - Victor Brosso Alvares
  * - Wellington Braga
  *
  * @Referencias
@@ -2386,6 +2385,9 @@ display: inline;
 @media only screen and (max-width : 1026px) {
   .wrap{
     width:100%;
+  }
+  #portal-column-two.fixo{
+    margin-left: 0 !important;
   }
   #portal-column-two .divSideBarAcesso .acessoSistema .inputAcesso{
     width: 163px;
