@@ -1245,6 +1245,9 @@ body {padding: 0; margin: 0;}
 .bx-wrapper .bx-pager .bx-pager-item{
   padding:8px 0 0 0;
 }
+.divSlider2 .bx-wrapper .bx-pager .bx-pager-item{
+  padding:0 0 0 0;
+}
 .bx-wrapper .bx-pager .bx-pager-item,
 .bx-wrapper .bx-controls-auto .bx-controls-auto-item {
   display: inline-block;
@@ -2319,7 +2322,7 @@ display: inline;
     width: 56%;
   }
   .divDestaquesHome ul.destaquesHome li{
-    text-align: center;
+    text-align: left;
     width: auto;
   }
   .bxslider li .contSliderHome{
@@ -2371,7 +2374,10 @@ display: inline;
     width: auto;
   }
   .divSlider2 .bx-wrapper .bx-controls-direction a{
-    top: 33%;
+    margin-top: 170px;
+  }
+  .divSlider .bx-wrapper .bx-controls-direction a{
+    margin-top: 110px;
   }
   .divSlider2 .bx-wrapper .bx-prev{
     left: 2px;
