@@ -1993,8 +1993,6 @@ body.template-busca #portal-breadcrumbs{
   display: block;
 }
 #content .tileItem p{
-  width: 512px;
-  display: inline-flex;
 }
 #content .tileItem .data{
     color: #525252;
