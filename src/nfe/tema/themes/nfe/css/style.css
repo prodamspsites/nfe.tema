@@ -1871,7 +1871,10 @@ body.template-busca #portal-breadcrumbs{
     font-family: 'Fira sans';
     font-size: 1.1em !important;
 }
-
+#content .divAccordeon h3 p .highlightedSearchTerm{
+    display: inline-table;
+    margin: 0 3px 0 3px;
+}
 #content .listingBar a{
   display:inline-block !important;
   padding:7px 13px !important;
