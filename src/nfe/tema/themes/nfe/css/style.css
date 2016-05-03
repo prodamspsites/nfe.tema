@@ -388,7 +388,7 @@ nav.menu ul li.submenu ul.menuLista li{
 border-radius: 4px 4px 4px 4px;
 -moz-border-radius: 4px 4px 4px 4px;
 -webkit-border-radius: 4px 4px 4px 4px;
-background:#ffe698;
+background:#fac675;
 }
 nav.menu ul li.submenu ul.menuLista li:first-child{
   border-top:1px solid #fff;
@@ -422,7 +422,8 @@ nav.menu ul li:last-child a{
   width: 100%;
   float: left;
   background: #f3e0e0;
-  height: 58px;
+  height: auto;
+  padding-bottom: 8px;
 }
 .informativosHome p{
   color: #333333;
@@ -433,6 +434,9 @@ nav.menu ul li:last-child a{
 .bxsliderAlerta li{
   float: left;
   width: 78%;
+}
+.lerMaisMobile{
+  display: none;
 }
 .informativosHome .bx-viewport{
   height: 68px !important;
@@ -1629,7 +1633,7 @@ body {padding: 0; margin: 0;}
   margin:8px 0 15px 0;
 }
 .destaqueNoticias h2.destaqueTitulo a{
-  color: #002e55;
+  color: #002e55 !important;
   font-family: 'Bitter', Arial;
 }
 .destaqueNoticias h2.destaqueTitulo a:hover{
@@ -1892,7 +1896,7 @@ body.template-busca #portal-breadcrumbs{
 #content .listingBar .current{
   display:inline-block !important;
   color:#868686 !important;
-  padding:7px 4px !important;
+  padding:7px 11px !important;
   font-size: 1.3em !important;
     -webkit-border-top-left-radius: 0em;
     -webkit-border-top-right-radius: 0em;
@@ -1941,7 +1945,7 @@ body.template-busca #portal-breadcrumbs{
     margin-right: -9px;
     margin-bottom: -1px;
     margin: -39px -9px -1px 0;
-    border-bottom: none;
+    border-bottom: none !important;
     font-size: 0.9em;
     color: #345877;
     cursor: pointer;
@@ -1981,6 +1985,9 @@ body.template-busca #portal-breadcrumbs{
 #filtraConteudo.legislacao{
   margin-top: -10px;
 }
+.menu-mobile-segundo{
+  display: none;
+}
 #content .tileItem{
   border-bottom: 1px solid #eee;
   margin: 40px 0 15px 0;
@@ -2017,7 +2024,7 @@ display: inline;
 }
 #filtraConteudo #filtrarLegislacao{
   background: #e0e0e0;
-  width: 238px;
+  width: 200px;
   height: 32px;
   border: none;
   padding: 0 0 0 10px;
@@ -2076,6 +2083,9 @@ display: inline;
   float:left;
   clear: both;
 }
+.menuSiteSegundoNivel{
+  position: relative;
+}
 /* ==========================================================================
    Adaptações responsivas
    ========================================================================== */
@@ -2101,6 +2111,61 @@ display: inline;
   .bxslider li .contSliderHome{
     clear: both;
   }
+  .menu-mobile-segundo{
+    background: url('../img/bgMenuLegis.gif') no-repeat;
+    float: right;
+    width:30px;
+    height: 30px;
+    display: block;
+    text-indent: -9999px;
+    margin: -30px 0 0 0;
+    border-bottom: none !important;
+  }
+  #viewlet-social-like{
+    float: left !important;
+    padding-bottom: 10px;
+  }
+  #filtraConteudo label{
+    padding:0 0 0px 0;
+    float: left;
+    margin: 8px 8px 0 0;
+    width: 70px;
+  }
+  #filtraConteudo #filtrarLegislacao{
+    width: 190px;
+  }
+  #content .menu-segundo-nivel {
+    float: right;
+    position: absolute;
+    right: 0;
+    top: -15px;
+    border-bottom: none !important;
+  }
+  #content .menu-segundo-nivel ul{
+    float: right;
+    width: 271px;
+    position: relative;
+    z-index: 2;
+    display: none;
+  }
+  #content .menu-segundo-nivel ul li.active{
+    background-color: #fcc834 !important;
+    border-top: none !important;
+  }
+  #content .menu-segundo-nivel li{
+    display: block;
+    background: #ffe699 !important;
+    width: 240px;
+    padding: 8px 0 8px 15px;
+    color: #022f56;
+    margin: 0 !important;
+    border-bottom: 1px solid #fff;
+  }
+  #content .menu-segundo-nivel li a{
+    border-right: none !important;
+    border-bottom: none !important;
+    font-weight: normal;
+  }
   #content .boxGeralNoticias{
     width: 100%;
   }
@@ -2116,6 +2181,11 @@ display: inline;
   #search-results-bar .searchResults .resultado{
     width: 100%;
   }
+  #filtraConteudo .btnLimparFiltro{
+    float: left;
+    border-left: none;
+    margin: 0;
+  }
   .acessoMobile{
     display:block;
     clear: both;
@@ -2124,8 +2194,8 @@ display: inline;
     border-top: 1px solid #fff;
     width: 100%;
     background: #e0e0e0;
-    height: 28px;
-    padding: 10px 0 0 0;
+    height: 34px;
+    padding: 17px 0 0 0;
   }
   .btnVersaoSimp{
     display:none;
@@ -2144,15 +2214,35 @@ display: inline;
     margin: 18px 0 0 5px;
   }
   #portal-header .divBusca input{
-    float:left;
+    float:right;
     background: #345877;
     width: 126px;
     color: #fff;
   }
   #portal-header .divBusca input::-webkit-input-placeholder {
-     color: #7590a7;
+     color: #fff;
+     opacity: 0.9;
   }
-
+  .lerMaisMobile{
+    color: #ef7d00 !important;;
+    font-size: 0.8em;
+    text-decoration: none;
+    margin: 8px 0 0 0;
+    float: left;
+  }
+  .lerMaisMobile strong{
+    padding: 1px 2px 1px 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+     background: #ef7d00 !important;
+     color: #fff;
+     width: 11px;
+     height: 14px;
+     float: left;
+     margin: -2px 5px 0 0;
+     font-family: Arial;
+  }
   #portal-header .divBusca input:-moz-placeholder {
      color: #7590a7;
   }
@@ -2169,6 +2259,29 @@ display: inline;
     text-indent: -9999px;
     width: 30px;
     float: left;
+    -webkit-border-top-left-radius: 6px;
+    -webkit-border-bottom-left-radius: 6px;
+    -moz-border-radius-topleft: 6px;
+    -moz-border-radius-bottomleft: 6px;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    -webkit-border-top-right-radius: 0px;
+-webkit-border-bottom-right-radius: 0px;
+-moz-border-radius-topright: 0px;
+-moz-border-radius-bottomright: 0px;
+border-top-right-radius: 0px;
+border-bottom-right-radius: 0px;
+  }
+  #portal-searchbox .searchField{
+    -webkit-border-radius: 0px;
+-webkit-border-top-right-radius: 6px;
+-webkit-border-bottom-right-radius: 6px;
+-moz-border-radius: 0px;
+-moz-border-radius-topright: 6px;
+-moz-border-radius-bottomright: 6px;
+border-radius: 0px;
+border-top-right-radius: 6px;
+border-bottom-right-radius: 6px;
   }
   #portal-header #logo h1 a{
     margin:15px 0 0 5px;
@@ -2183,7 +2296,7 @@ display: inline;
   #portal-header .btnReclamacoes{
     position: absolute;
     top: 66px;
-    left: 147px;
+    left: 166px;
     width: 128px;
     -webkit-border-radius: 8px;
     -moz-border-radius: 8px;
@@ -2200,18 +2313,27 @@ display: inline;
     text-transform: uppercase;
   }
   #portal-header .menuResp{
-    background:url(../img/menuResp.png) no-repeat 0 0;
+    background:url(../img/menuResp.png) no-repeat 4px 0;
     float: left;
-    width: 29px;
+    width: 40px;
     height: 50px;
-    margin: 46px 5px 0 5px;
+    margin: 46px 5px 0 14px;
     display: block;
     text-indent: -9999px;
   }
   #portal-header .divSection{
     width: 100%;
-    margin: 8px 0 6px 0;
+    margin: 8px 0 0px 0;
     padding: 0;
+  }
+  nav.menu ul li.submenu{
+    padding-bottom:0;
+  }
+  nav.menu ul li a{
+    border-right: none !important;
+  }
+  nav.menu.empresas ul li.submenu ul.menuLista, nav.menu.cidadao ul li.submenu ul.menuLista{
+    top: 0;
   }
   .divMenu, .menuSite{
     display: none;
@@ -2291,6 +2413,9 @@ display: inline;
     width: calc(100% - 35px);
     float: none;
   }
+  .informativosHome p{
+    padding: 3px 0 0 0;
+  }
   .informativosHome .bx-controls{
     position: absolute;
     top: 0;
@@ -2304,8 +2429,11 @@ display: inline;
     width: 70% !important;
   }
   .informativosHome .titImportante{
-    width: 97px;
-    padding: 20px 10px 0 0;
+    width: 100%;
+    padding: 20px 10px 0 12px;
+    height: auto;
+    text-align: left;
+    margin: 0;
   }
   .informativosHome .bx-controls-direction{
     margin:3px 0 0 0;
@@ -2344,6 +2472,9 @@ display: inline;
   }
   .bx-controls-direction{
     display: block;
+  }
+  .textoAccordeon{
+    padding: 0 10px 0 10px;
   }
   #footer .logoFooter a{
     width: 100%;
@@ -2395,15 +2526,20 @@ display: inline;
   }
   #content .formDuvidas form input[type=text]{
     width: 90%;
+    margin: 0;
+  }
+  #content .formDuvidas form input[type=submit]{
+    margin: 0;
   }
   #content .formDuvidas form textarea{
     width: 90%;
+    margin: 0;
   }
   #content .formDuvidas form label{
     text-align: left;
   }
   .formQuestion.label{
-    padding-left:10px; 
+    padding-left:10px;
   }
 }
 
@@ -2461,7 +2597,7 @@ display: inline;
 }
 @media only screen and (max-width : 500px) {
 .informativosHome .bx-viewport{
-    width: 60% !important;
+    width: 90% !important;
   }
 }
 
