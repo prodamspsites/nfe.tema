@@ -2095,6 +2095,9 @@ display: inline;
   #portal-column-content{
     width: 100%;
   }
+  .cover-collection-tile .collection-item{
+    width: 95%;
+  }
   #portal-column-two.fixo{
     position: relative;
   }
