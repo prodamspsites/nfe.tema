@@ -696,7 +696,7 @@ div.managePortletsLink{
   clear: both;
   margin: 20px 0 20px 0;
   padding: 22px 0 18px 32px;
-  width: 299px;
+  width: 278px;
 }
 #portal-column-two .divSideBarPlacar h2{
   background:url(../img/icoPlacar.png) no-repeat;
@@ -2098,6 +2098,9 @@ display: inline;
   .cover-collection-tile .collection-item{
     width: 95%;
   }
+  #content .searchDuvidas .vcTambem .filtrarLegislacao{
+    width: 165px;
+  }
   #portal-column-two.fixo{
     position: relative;
   }
@@ -2334,6 +2337,7 @@ border-bottom-right-radius: 6px;
   }
   nav.menu ul li a{
     border-right: none !important;
+    width: 90%;
   }
   nav.menu.empresas ul li.submenu ul.menuLista, nav.menu.cidadao ul li.submenu ul.menuLista{
     top: 0;
@@ -2385,6 +2389,24 @@ border-bottom-right-radius: 6px;
   }
   nav.menu ul li{
     width:100%;
+  }
+  nav.menu ul li:last-child{
+    padding-bottom: 8px;
+  }
+  nav.menu.cidadao ul li ul.menuLista li:last-child{
+    padding-bottom: 0px;
+  }
+  nav.menu.cidadao ul > li > a{
+    border-bottom: 1px solid #f9d66e;
+    padding-bottom: 5px;
+  }
+  nav.menu.empresas ul > li > a{
+    border-bottom: 1px solid #fbd66e;
+    padding-bottom: 5px;
+  }
+  nav.menu ul > li:last-child > a, nav.menu ul > li.submenu.active > a{
+    border-bottom:none;
+    padding-bottom: 0px;
   }
   nav.menu.cidadao ul li.submenu:hover, nav.menu.empresas ul li.submenu:hover{
     background: none ;
