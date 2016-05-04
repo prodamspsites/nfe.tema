@@ -1999,7 +1999,9 @@ body.template-busca #portal-breadcrumbs{
 #content .tileItem .textoAccordeon p{
   display: block;
 }
-#content .tileItem p{
+#content .tileItem p .description{
+  width: 535px;
+  display: block;
 }
 #content .tileItem .data{
     color: #525252;
