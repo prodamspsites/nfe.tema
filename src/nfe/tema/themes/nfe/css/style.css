@@ -373,9 +373,9 @@ nav.menu ul li.submenu:hover:after{
 }
 nav.menu ul li.submenu ul.menuLista{
   display: block;
--webkit-box-shadow: 0px 0px 8px -1px rgba(0,0,0,0.39);
--moz-box-shadow: 0px 0px 8px -1px rgba(0,0,0,0.39);
-box-shadow: 0px 0px 8px -1px rgba(0,0,0,0.39);
+  -webkit-box-shadow: 0px 0px 8px -1px rgba(0,0,0,0.39);
+  -moz-box-shadow: 0px 0px 8px -1px rgba(0,0,0,0.39);
+  box-shadow: 0px 0px 8px -1px rgba(0,0,0,0.39);
   min-width: 230px;
   background: #fff;
 }
@@ -2460,13 +2460,14 @@ border-bottom-right-radius: 6px;
   }
   .informativosHome{
     height: auto;
+    width: 100%;
     position: relative;
   }
   .informativosHome .bx-viewport{
     width: 70% !important;
   }
   .informativosHome .titImportante{
-    width: 100%;
+    width: 90%;
     padding: 20px 10px 0 12px;
     height: auto;
     text-align: left;
@@ -2474,6 +2475,12 @@ border-bottom-right-radius: 6px;
   }
   .informativosHome .bx-controls-direction{
     margin:3px 0 0 0;
+  }
+  #content .searchDuvidas .vcTambem{
+    width: 92%;
+  }
+  #content .formDuvidas{
+    width: 90%;
   }
   .divDestaquesHome ul.destaquesHome li{
     clear: both;
