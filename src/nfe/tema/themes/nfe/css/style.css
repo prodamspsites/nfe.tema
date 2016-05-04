@@ -2099,7 +2099,7 @@ display: inline;
     width: 95%;
   }
   #content .searchDuvidas .vcTambem .filtrarLegislacao{
-    width: 165px;
+    width: 88%;
   }
   #portal-column-two.fixo{
     position: relative;
@@ -2110,6 +2110,10 @@ display: inline;
   }
   .divDestaquesHome{
     width: 100%;
+  }
+  .filtrarLegislacaoButton{
+    float: right;
+    margin-right: 20px;
   }
   #portal-column-two{
   width: calc(100% - 32px);
@@ -2129,13 +2133,14 @@ display: inline;
   }
   #viewlet-social-like{
     float: left !important;
+    width: 100% !important;
     padding-bottom: 10px;
   }
   #filtraConteudo label{
     padding:0 0 0px 0;
     float: left;
     margin: 8px 8px 0 0;
-    width: 70px;
+    width: 98%;
   }
   #filtraConteudo #filtrarLegislacao{
     width: 190px;
@@ -2173,7 +2178,7 @@ display: inline;
     font-weight: normal;
   }
   #content .boxGeralNoticias{
-    width: 100%;
+    width: 89%;
   }
   .placarMobile{
     display:none;
@@ -2440,6 +2445,10 @@ border-bottom-right-radius: 6px;
   }
   .informativosHome p{
     padding: 3px 0 0 0;
+    background-color: #f3e0e0;
+  }
+  .bxsliderAlerta li{
+    background-color: #f3e0e0;
   }
   .informativosHome .bx-controls{
     position: absolute;
@@ -2490,7 +2499,8 @@ border-bottom-right-radius: 6px;
     width:85%;
   }
   .divSlider2 .bx-wrapper li .txtSlider2{
-    width: 90%;
+    width: 83%;
+    margin: 10px 0 0 0;
   }
   .bxslider li .imgSliderHome{
     width:95%;
@@ -2520,7 +2530,7 @@ border-bottom-right-radius: 6px;
     margin: 0 0 0 0;
   }
   #portal-column-two .divSideBarPlacar{
-    margin-left: 5%;
+    margin-left: 0%;
   }
   .bxslider li .btnContinuar{
     margin:-2px -9px -1px 0;
@@ -2530,6 +2540,7 @@ border-bottom-right-radius: 6px;
   }
   .bx-wrapper .bx-viewport{
     height: auto !important;
+    background: #eee;
   }
   .cover-collection-tile{
     width: auto;
