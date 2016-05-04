@@ -1155,6 +1155,7 @@ div.managePortletsLink{
   width: 62px;
   height: 45px;
   margin-top: 5px;
+  display: none;
 }
 #footer .footerBottom .divProdam .logoProdam a{
   background:url(../img/logoProdam.png) no-repeat;
