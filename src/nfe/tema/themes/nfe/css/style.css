@@ -440,6 +440,7 @@ nav.menu ul li:last-child a{
 }
 .informativosHome .bx-viewport{
   height: 68px !important;
+  background: #f3e0e0;
 }
 .informativosHome .bx-controls-direction .bx-prev{
   background: url(../img/btnPrevImportant.gif) no-repeat;
@@ -2550,7 +2551,6 @@ border-bottom-right-radius: 6px;
   }
   .bx-wrapper .bx-viewport{
     height: auto !important;
-    background: #eee;
   }
   .cover-collection-tile{
     width: auto;
