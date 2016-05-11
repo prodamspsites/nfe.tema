@@ -697,16 +697,16 @@ div.managePortletsLink{
   clear: both;
   margin: 20px 0 20px 0;
   padding: 22px 0 18px 32px;
-  width: 278px;
+  width: 296px;
 }
 #portal-column-two .divSideBarPlacar h2{
   background:url(../img/icoPlacar.png) no-repeat;
   padding:3px 0 15px 40px;
-  font-weight: 500;
   margin: 0 0 0 0;
   font-size:1.1em;
   color: #525252;
   font-weight: 500;
+  font-family: fira sans;
 }
 /*MENU INTERNAS*/
 .divMenuSecundaria .titulo_principal{
@@ -745,8 +745,9 @@ div.managePortletsLink{
 }
 #content .menu-segundo-nivel ul li a{
     color: #002e55;
-    padding: 5px 6px 5px 6px;
+    padding: 5px 0 5px 6px;
     border-bottom: none;
+    width: 100%;
     float: left;
     border-right: 1px solid #e0e0e0;
     font-weight: 600;
@@ -929,7 +930,7 @@ div.managePortletsLink{
   color:#002e55 !important;
   background: #eee;
   text-decoration: none;
-  margin: 15px 0 25px 0;
+  margin: 15px 0 35px 0;
 }
 #content .bxslider{
   margin-left:0;
@@ -947,7 +948,7 @@ div.managePortletsLink{
 #content h1.documentFirstHeading{
   padding: 0 0 15px 0;
   margin: 10px 0 0 0;
-  font-size: 2em;
+  font-size: 1.7em;
 }
 #content h3.titLinhaFinaNot{
   font-style: italic;
@@ -1516,6 +1517,20 @@ body {padding: 0; margin: 0;}
   clear: both;
   width: 100%;
   margin: 0px 0 20px 0;
+}
+#content .divAccordeon h2{
+  font-style: italic;
+  font-size:1.2em;
+  margin: 15px 0 15px 5px;
+  font-weight: normal;
+}
+#content-core h3{
+  font-style: italic;
+  font-size:1.1em;
+  margin: 15px 0 15px 5px;
+  font-weight: normal;
+  float: left;
+  width: 100%;
 }
 #content .divAccordeon h3{
   -webkit-border-radius: 8px;
@@ -2126,13 +2141,14 @@ display: inline;
     clear: both;
   }
   .menu-mobile-segundo{
-    background: url('../img/bgMenuLegis.gif') no-repeat;
+    background: url('../img/bgMenuLegis.gif') no-repeat right;
     float: right;
     width:30px;
     height: 30px;
     display: block;
     text-indent: -9999px;
     margin: -30px 0 0 0;
+    padding: 0 90% 0 0;
     border-bottom: none !important;
   }
   #viewlet-social-like{
@@ -2231,7 +2247,7 @@ display: inline;
   #portal-header .divBusca input{
     float:right;
     background: #345877;
-    width: 126px;
+    width: 109px;
     color: #fff;
   }
   #portal-header .divBusca input::-webkit-input-placeholder {
@@ -2323,6 +2339,7 @@ border-bottom-right-radius: 6px;
   #portal-header .LSBox{
     float:left;
     margin: -10px 0 0 0;
+    width: 151px;
   }
   #portal-header .btnReclamacoes::first-letter{
     text-transform: uppercase;
@@ -2541,7 +2558,7 @@ border-bottom-right-radius: 6px;
     margin: 0 0 0 0;
   }
   #portal-column-two .divSideBarPlacar{
-    margin-left: 0%;
+    margin-left: 17px;
   }
   .bxslider li .btnContinuar{
     margin:-2px -9px -1px 0;
@@ -2551,6 +2568,7 @@ border-bottom-right-radius: 6px;
   }
   .bx-wrapper .bx-viewport{
     height: auto !important;
+    background: #eee;
   }
   .cover-collection-tile{
     width: auto;
@@ -2814,7 +2832,18 @@ body.contraste1 #portal-column-two .divSideBarAcesso .acessoSistema .esqueciSenh
 }
 body.contraste1 #portal-header .logoFinancas a{
   background: url(../img/logoFinancas2.png) no-repeat;
+  padding: 0 5px 0 5px;
 }
 body.contraste1 #footer .logoFooter a{
   background: url(../img/logoFooter2.png) no-repeat;
+}
+body.contraste1 #content .menu-segundo-nivel ul li a{
+  color: #fff;
+  background: none;
+}
+body.contraste1 #content .menu-segundo-nivel ul li, body.contraste1 #content .menu-segundo-nivel ul{
+  background: none;
+}
+body.contraste1 .informativosHome .bx-viewport{
+  background: #000;
 }
