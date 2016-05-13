@@ -511,7 +511,7 @@ nav.menu ul li:last-child a{
   letter-spacing: none;
 }
 #portal-columns{
-    min-height: 500px !important;
+    min-height: 600px !important;
   }
 #portal-column-content{
   float:left;
