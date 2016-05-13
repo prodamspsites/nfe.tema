@@ -510,6 +510,9 @@ nav.menu ul li:last-child a{
   margin: 20px 0 20px 0;
   letter-spacing: none;
 }
+#portal-columns{
+    min-height: 500px !important;
+  }
 #portal-column-content{
   float:left;
   width:670px;
