@@ -771,6 +771,16 @@ div.managePortletsLink{
   font-family: 'Fira Sans',Arial;
   font-size: 1.1em;
 }
+#content-core h2.subtitulo{
+    color: #002e55;
+    font-family: 'Bitter', Arial;
+    font-size:1.25em;
+    margin: 16px 0 10px 0;
+    padding: 0 0 0 10px;
+    float: left;
+    width: 100%;
+    font-weight: normal;
+}
 #content .documentDescription, #content #description{
   float:left;
   width: 100%;
