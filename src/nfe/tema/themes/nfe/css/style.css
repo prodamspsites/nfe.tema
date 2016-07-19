@@ -138,6 +138,12 @@ font-family: 'Fira Sans';
   display:none;
 }
 
+.divBusca > #portal-searchbox ~ #portal-searchbox {
+  display: none;
+}
+.divBusca > #portal-searchbox {
+  display: block;
+}
 #portal-header .divBusca{
   float:right;
   margin: 40px 200px 0 0;
