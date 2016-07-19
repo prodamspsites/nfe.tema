@@ -138,6 +138,26 @@ font-family: 'Fira Sans';
   display:none;
 }
 
+.divDestaquesHome #controler-carrossel {
+  display: none;
+}
+
+#portal-columns > #portal-breadcrumbs ~ #portal-breadcrumbs {
+  display: none;
+}
+
+#portal-columns > #breadcrumbs-home,
+#portal-columns > #breadcrumbs-1,
+#portal-columns > #breadcrumbs-2 {
+  display: block;
+}
+
+#portal-columns > #breadcrumbs-home ~ #breadcrumbs-home,
+#portal-columns > #breadcrumbs-1 ~ #breadcrumbs-1,
+#portal-columns > #breadcrumbs-2 ~ #breadcrumbs-2 {
+  display: block;
+}
+
 .divBusca > #portal-searchbox ~ #portal-searchbox {
   display: none;
 }
