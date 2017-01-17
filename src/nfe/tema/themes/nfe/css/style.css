@@ -172,6 +172,7 @@ font-family: 'Fira Sans';
   height:59px;
   float: right;
   margin:30px 0 0 0;
+  display: block;
 }
 #portal-header .divSection{
   clear:both;
