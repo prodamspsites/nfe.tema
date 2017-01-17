@@ -166,12 +166,12 @@ font-family: 'Fira Sans';
   margin: 40px 200px 0 0;
 }
 #portal-header .logoFinancas a{
-  background:url(../img/logoFinancas.png) no-repeat;
+  background:url(../img/logo_fazenda.png) no-repeat;
   float:right;
   width:163px;
-  height:59px;
+  height:90px;
   float: right;
-  margin:30px 0 0 0;
+  margin:35px 0 0 0;
   display: block;
 }
 #portal-header .divSection{
