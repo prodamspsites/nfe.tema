@@ -138,6 +138,14 @@ font-family: 'Fira Sans';
   height:102px;
   margin:35px 0 0 0;
 }
+#logoCaixa{
+  background:url(../img/caixa.png) no-repeat;
+  float:left;
+  width:123px;
+  height:38px;
+  margin:35px 0 0 0;
+  display: block;
+}
 #portal-header .logo #portal-logo img, .searchSection{
   display:none;
 }
@@ -820,7 +828,7 @@ div.managePortletsLink{
   top: 1px;
 }
 #content .menu-segundo-nivel ul li a{
-    color: #156e09;
+    color: #212121;
     padding: 5px 0 5px 6px;
     border-bottom: none;
     width: 100%;
@@ -2146,7 +2154,7 @@ display: inline;
 }
 .filtrarLegislacaoButton{
   font-family: 'Fira Sans', Arial;
-  background: #1b8b0b;
+  background: #212121;
   color: #fff;
   padding: 8px 22px 5px 22px;
   border: none;
