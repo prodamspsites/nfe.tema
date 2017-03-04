@@ -138,13 +138,14 @@ font-family: 'Fira Sans';
   height:102px;
   margin:35px 0 0 0;
 }
-#logoCaixa{
+.logoCaixa{
   background:url(../img/caixa.png) no-repeat;
   float:left;
   width:123px;
-  height:38px;
+  height:80px;
   margin:35px 0 0 0;
   display: block;
+  background-position: 50% 0;
 }
 #portal-header .logo #portal-logo img, .searchSection{
   display:none;
@@ -2208,6 +2209,9 @@ display: inline;
 /* Small Devices, Tablets */
 @media only screen and (max-width : 1024px) {
   #portal-column-content{
+    width: 100%;
+  }
+  .logoCaixa{
     width: 100%;
   }
   #content .tileItem p .description{
