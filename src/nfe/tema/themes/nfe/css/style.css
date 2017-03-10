@@ -321,7 +321,7 @@ nav.menu.empresas{
   width: 100%;
   min-height: 40px;
  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#afd91f+0,a5c438+100 */
-  background: #ef7d00; /* Old browsers */
+  background: #afd91f; /* Old browsers */
   background: -moz-linear-gradient(top,  #afd91f 0%, #a5c438 100%); /* FF3.6-15 */
   background: -webkit-linear-gradient(top,  #afd91f 0%,#a5c438 100%); /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(to bottom,  #afd91f 0%,#a5c438 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
@@ -1052,7 +1052,7 @@ div.managePortletsLink{
   font-weight: normal;
 }
 #content h1.tituloNoticias{
-  color: #ef7d00;
+  color: #156e09;
   font-size: 2em;
   font-family: Bitter;
   margin: 0 0 10px 0;
