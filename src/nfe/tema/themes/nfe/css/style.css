@@ -623,8 +623,8 @@ div.managePortletsLink{
   -moz-border-radius-topright: 12px;
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
-  padding: 20px 0 0 32px;
-  width:300px;
+  padding: 20px 30px 0 30px;
+  width:270px;
   float: left;
 }
 #portal-column-two .divSideBarAcesso h2{
@@ -698,10 +698,10 @@ div.managePortletsLink{
 #portal-column-two .divSideBarAcesso .btnAcessoCertificado{
   color: #fff;
   text-align: left;
-  background:url(../img/icoCadeado.png) no-repeat #1b8b0b 22px 8px;
+  background:#1b8b0b;
   width: 220px;
   height: 22px;
-  padding: 5px 0 4px 60px;
+  padding: 4px 0 4px 0;
   font-size: 0.8em;
   margin: 10px 0 15px 0;
   text-decoration: none;
